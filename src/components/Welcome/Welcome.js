@@ -5,8 +5,7 @@ import './Welcome.scss';
 const Welcome = () => {
   return (
     <div className='welcome'>
-      <h1>Hello.<br/>I am Uros</h1>
-      <img src={name} alt="name" />
+      <h1>Hello,<br/>I am Uroš.</h1>
     </div>
   )
 }
