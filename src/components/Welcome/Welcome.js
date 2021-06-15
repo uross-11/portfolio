@@ -1,11 +1,13 @@
-import React from 'react'
-import name from './name.png'
+import React from 'react';
 import './Welcome.scss';
+import Hero from '../Hero/Hero';
+import Date from '../Date/Date';
 
 const Welcome = () => {
   return (
     <div className='welcome'>
-      <h1>Hello,<br/>I am Uroš.</h1>
+      <Hero />
+      <Date />
     </div>
   )
 }

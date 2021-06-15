@@ -1,12 +1,23 @@
 import './App.css';
-import './styles/styles.scss';
+import './styles/main.scss';
 import Welcome from './components/Welcome/Welcome';
+import Work from './components/Work/Work';
+import Contact from './components/Contact/Contact';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import { useState } from 'react';
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <main className="main">
+    <div className={`${darkMode ? 'dark' : 'light'} app`}> 
+      <Navbar />
       <Welcome />
-    </main>
+      <Work />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

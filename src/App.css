@@ -1,24 +1,12 @@
-@font-face {
-  font-family: 'Ampersand';
-  src: url('https://uploads-ssl.webflow.com/5e1e29388e0a4f467dbe0cf1/60048bb2da7fb7f568f40b38_Ampersand-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'Ampersand';
-  src: url('https://uploads-ssl.webflow.com/5e1e29388e0a4f467dbe0cf1/60048bb298c87b21b884d03f_Ampersand-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
-
 body {
   font-family: 'Ampersand', 'serif';
   font-weight: 400;
+}
+
+.dark {
   background-color: #202020;
+}
+
+.light {
+  background-color: #a0a0a0;
 }
