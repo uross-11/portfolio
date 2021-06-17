@@ -1,13 +1,22 @@
 import React from 'react';
 import './Navbar.scss';
+import { VscGithubAlt, VscArrowDown } from 'react-icons/vsc';
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      navbar
+    <nav className='navbar'>
       <button>
+        resume
+        <VscArrowDown />
       </button>
-    </div>
+      {/* <VscGithubAlt /> */}
+      <button>
+        Work
+      </button>
+      <button>
+        Contact Me
+      </button>
+    </nav>
   )
 }
 

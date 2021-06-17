@@ -1,13 +1,15 @@
 import React from 'react';
 import './Welcome.scss';
 import Hero from '../Hero/Hero';
-import Date from '../Date/Date';
+import ShowDate from '../ShowDate/ShowDate';
 
 const Welcome = () => {
   return (
     <div className='welcome'>
       <Hero />
-      <Date />
+      <p>frontend developer</p>
+      <ShowDate />
+      about
     </div>
   )
 }

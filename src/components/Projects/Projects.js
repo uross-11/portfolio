@@ -1,12 +1,23 @@
 import React from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
-const temparr = [1, 2, 3, 4];
+import {listOfProjects} from '../../listOfProjects';
+import { useGlobalContext } from '../../context';
 
 const Projects = () => {
+  const { openModal, setProjectId  } = useGlobalContext();
+
   return (
     <div>
-      {temparr.map((num) => {
-        return <div><ProjectCard key={num} num={num} /></div>
+      {listOfProjects.map((num, index) => {
+        return (
+          <div key={index}>
+            <ProjectCard {...num} />
+            <button onClick={() => {
+              setProjectId(index);
+              openModal();
+            }}>open</button>
+          </div>
+        )
       })}
     </div>
   )

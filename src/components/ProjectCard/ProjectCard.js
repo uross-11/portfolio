@@ -1,10 +1,21 @@
 import React from 'react';
 import Projects from '../Projects/Projects';
 
-const ProjectCard = ({num}) => {
+const ProjectCard = ({ 
+  shortdesc,
+  longdesc,
+  img,
+  title,
+  techstack,
+  liveurl,
+  sourceurl
+}) => {
   return (
     <div>
-      {num}
+      {shortdesc}
+      {longdesc}
+      {img}
+      {title}
     </div>
   )
 }
