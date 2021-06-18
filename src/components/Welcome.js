@@ -1,7 +1,7 @@
 import React from 'react';
-import './Welcome.scss';
-import Hero from '../Hero/Hero';
-import ShowDate from '../ShowDate/ShowDate';
+import '../styles/components/Welcome.scss';
+import Hero from './Hero';
+import ShowDate from './ShowDate';
 
 const Welcome = () => {
   return (
@@ -9,7 +9,6 @@ const Welcome = () => {
       <Hero />
       <p>frontend developer</p>
       <ShowDate />
-      about
     </div>
   )
 }

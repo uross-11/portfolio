@@ -1,7 +1,7 @@
 import React from 'react';
-import './ShowDate.scss';
+import '../styles/components/ShowDate.scss';
 
-function ShowDate() {
+const ShowDate = () => {
   const date = Date().split(' ');
   const month = date[1];
   const day = date[2];
@@ -9,6 +9,7 @@ function ShowDate() {
     <div>
       {month}
       {day}
+      about me
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contact.scss';
+import '../styles/components/Contact.scss';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -20,11 +20,12 @@ const Contact = () => {
           name='email'
           placeholder='Email address'
           />
-        <input
-          type='text'
-          name='subject'
-          placeholder='Subject'
-          />
+        <textarea
+          rows={3}
+          name='message'
+          className='form-control formInput'
+          placeholder='Message'
+        />
         <button type='submit'>Submit</button>
       </form>
     </div>

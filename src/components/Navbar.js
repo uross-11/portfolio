@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.scss';
+import '../styles/components/Navbar.scss';
 import { VscGithubAlt, VscArrowDown } from 'react-icons/vsc';
 
 const Navbar = () => {

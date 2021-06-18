@@ -1,6 +1,6 @@
 import React from 'react';
-import './Work.scss';
-import Projects from '../Projects/Projects';
+import '../styles/components/Work.scss';
+import Projects from './Projects';
 
 const Work = () => {
   return (

@@ -1,5 +1,6 @@
-export const listOfProjects = [
+export const data = [
   {
+    id: 0,
     shortdesc: 'shortdescription',
     longdesc: 'long description',
     img: 'image',
@@ -9,6 +10,7 @@ export const listOfProjects = [
     sourceurl: 'source url',
   },
   {
+    id: 1,
     shortdesc: 'shortdescription',
     longdesc: 'long description',
     img: 'image',
@@ -18,6 +20,7 @@ export const listOfProjects = [
     sourceurl: 'source url',
   },
   {
+    id: 2,
     shortdesc: 'shortdescription',
     longdesc: 'long description',
     img: 'image',
