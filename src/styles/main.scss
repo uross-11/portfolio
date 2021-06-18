@@ -1,11 +1,9 @@
 /* Abstracts */
 @import 'abstracts/variables';
-@import 'abstracts/functions';
 @import 'abstracts/mixins';
 
 /* Vendors */
 @import 'vendors/bootstrap';
-@import 'vendors/normalize';
 
 /* Base */
 @import 'base/base';
@@ -19,3 +17,14 @@
 /* Themes */
 @import 'themes/dark';
 @import 'themes/light';
+
+/* Components */
+@import 'components/Contact.scss';
+@import 'components/Footer.scss';
+@import 'components/Navbar.scss';
+@import 'components/ProjectCard.scss';
+@import 'components/ProjectModal.scss';
+@import 'components/Projects.scss';
+@import 'components/ShowDate.scss';
+@import 'components/Welcome.scss';
+@import 'components/Work.scss';

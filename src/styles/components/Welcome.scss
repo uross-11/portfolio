@@ -1,7 +1,21 @@
 .welcome {
   color: #fff;
-  font-size: 3rem;
   height: 100vh;
-  display: grid;
-  place-items: center;
+}
+
+.hero {
+  padding-top: 8.125rem;
+  font-size: $hero;
+  font-family: 'Ampersand-light';
+}
+
+.job {
+  &-title {
+    padding-left: 1rem;
+  }
+
+  &-arrow {
+    transform: rotate(90deg); 
+    fill: white;
+  }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/components/Contact.scss';
 
 const Contact = () => {
   const handleSubmit = (e) => {
