@@ -1,0 +1,19 @@
+.footer {
+  margin: 15px;
+  padding: 100px 0;
+  background-color: hsla(0, 0%, 100%, 1);
+  color: black;
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: block;
+    font-family: 'Thasadith', sans-serif;
+    color: black;
+  }
+}

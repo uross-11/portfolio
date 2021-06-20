@@ -2,27 +2,28 @@ import React from 'react';
 const links = [
   {
     text: 'GitHub',
-    url: '',
+    url: '#',
   },
   {
     text: 'Twitter',
-    url: '',
+    url: '#',
   },
   {
     text: 'CodePen',
-    url: '',
+    url: '#',
   },
 ];
 
 const Footer = () => {
   return (
-    <footer>
-      <h1>footer</h1>
-      {links.map((item, index) => {
-        return <a key={index} href={item.url}>
-          {item.text}
-        </a>
-      })}
+    <footer className='footer'>
+      <div className="footer__links">
+        {links.map((item, index) => {
+          return <a className='footer__link' key={index} href={item.url}>
+            {item.text}
+          </a>
+        })}
+      </div>
     </footer>
   );
 }

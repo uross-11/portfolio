@@ -7,8 +7,10 @@ const Contact = () => {
 
   return (
     <div className='contact'>
-      <h1>contact</h1>
-      <form onSubmit={handleSubmit}>
+      <h2 className='contact__title container'>
+        INTERESTED IN WORKING WITH ME?<br />LET'S TALK.
+      </h2>
+      <form className='container form' onSubmit={handleSubmit}>
         <input
           type='text'
           name='name'
@@ -25,7 +27,7 @@ const Contact = () => {
           className='form-control formInput'
           placeholder='Message'
         />
-        <button type='submit'>Submit</button>
+        <button className='contact__button' type='submit'>Get in touch</button>
       </form>
     </div>
   )
