@@ -1,4 +1,7 @@
 .work {
-  height: 100vh;
   background-color: #101010;
+
+  &__title {
+    padding-bottom: 100px;
+  }
 }

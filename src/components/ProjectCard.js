@@ -14,14 +14,16 @@ const ProjectCard = ({
   const { openModal, setProjectId } = useGlobalContext();
 
   return (
-    <div>
-      {title}
-      {shortdesc}
-      <div onClick={() => {
+    <div className='projectcard'>
+      <div className='img' onClick={() => {
         setProjectId(id);
         openModal();
       }}>
-        {img}
+        <img src='../images/img.png' alt="" />
+      </div>
+      <div className="projectcard__info">
+        <h3>{title}</h3>
+        <p className='projectcard__desc'>{shortdesc}</p> 
       </div>
     </div>
   )

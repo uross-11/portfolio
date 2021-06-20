@@ -1,0 +1,18 @@
+.projectcard {
+  color: white;
+  padding-bottom: 100px;
+  /* 
+    font-family: 'Ampersand-light', serif;
+    font-size: 2rem;
+  */
+
+  &__info {
+    padding-left: 10%;
+    padding-top: 40px;
+  }
+  
+  &__desc {
+    padding-left: 60px;
+    padding-top: 25px;
+  }
+}

@@ -1,0 +1,68 @@
+.date {
+  display: inline;
+
+  &__circle {
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
+
+  &__inner {
+    position: absolute;
+    z-index: 6;
+    height: 98px;
+    width: 98px;
+    margin: 1px 0 0 1px;
+    background: #202020;
+    border-radius: 50%;
+  }
+
+
+
+  &__border__bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(85, 85, 85);
+    border-radius: 50%;
+    clip: rect(0px, 100px, 100px, 50px);
+  }
+
+  &__progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+    z-index: 1;
+  }
+
+  @keyframes left {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes right {
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__left {
+    animation: left 2s linear both;
+  }
+
+  &__right {
+    animation: right 1s linear both;
+    animation-delay: 2s;
+  }
+
+
+  &__info {
+    position: absolute;
+    z-index: 8;
+    font-size: 2rem;
+   font-family: 'Ampersand-light', cursive;
+   font-family: 'Thasadith', sans-serif;
+  }
+}

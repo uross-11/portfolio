@@ -10,12 +10,14 @@
 }
 
 .job {
-  &-title {
-    padding-left: 1rem;
+  &__title {
+    padding-left: 0.5rem;
   }
 
-  &-arrow {
+  &__arrow {
+    position: relative;
     transform: rotate(90deg); 
     fill: white;
+    bottom: -3px;
   }
 }
