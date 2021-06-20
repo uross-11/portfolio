@@ -3,7 +3,7 @@ import Projects from './Projects';
 
 const Work = () => {
   return (
-    <div className='work'>
+    <div id='work' className='work'>
       <h2 className='container work__title'>Work</h2>
       <Projects />
     </div>

@@ -1,68 +1,61 @@
+@keyframes circle {
+  from {
+    stroke-dashoffset: 315;
+  }
+  to {
+  stroke-dashoffset: 70;  
+  }
+}
+
 .date {
-  display: inline;
+  display: grid;
+  place-items: center;
+  margin-top: 125px;
+  margin-right: 75px;
 
   &__circle {
-    height: 100px;
-    width: 100px;
-    position: relative;
-  }
+    transform: scale(2.2);
+    opacity: 0.3;
 
-  &__inner {
-    position: absolute;
-    z-index: 6;
-    height: 98px;
-    width: 98px;
-    margin: 1px 0 0 1px;
-    background: #202020;
-    border-radius: 50%;
-  }
-
-
-
-  &__border__bar {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(85, 85, 85);
-    border-radius: 50%;
-    clip: rect(0px, 100px, 100px, 50px);
-  }
-
-  &__progress {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    clip: rect(0px, 50px, 100px, 0px);
-    z-index: 1;
-  }
-
-  @keyframes left {
-    100% {
-      transform: rotate(180deg);
+    &__progress {
+      animation: circle 500ms ease-in-out;
+      stroke-dasharray: 315;
+      stroke-dashoffset: 70;
+      transform-origin: 50% 50%;
     }
   }
-
-  @keyframes right {
-    100% {
-      transform: rotate(90deg);
-    }
-  }
-
-  &__left {
-    animation: left 2s linear both;
-  }
-
-  &__right {
-    animation: right 1s linear both;
-    animation-delay: 2s;
-  }
-
 
   &__info {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    z-index: 8;
-    font-size: 2rem;
-   font-family: 'Ampersand-light', cursive;
-   font-family: 'Thasadith', sans-serif;
+    z-index: 3;
+    font-size: 1rem;
+    font-family: 'Thasadith', sans-serif;
+
+    &__month,
+    &__day,
+    &__about {
+      position: absolute;
+    }
+
+    &__month {
+      right: 2rem;
+    }
+
+    &__day {
+      right: 0;
+      top: 0.3rem;
+      font-size: 2.5rem;
+    }
+
+    &__about {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 0.6rem;
+      width: 100%;
+      text-align: center;
+    }
   }
 }

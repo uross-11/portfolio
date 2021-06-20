@@ -1,6 +1,12 @@
 .navbar {
+  z-index: 10;
   position: fixed;
+  padding: 55px 30px 0 30px;
   width: 100%;
   justify-content: end;
   font-size: 1rem;
+
+  &__link {
+    margin-left: 16px;
+  }
 }

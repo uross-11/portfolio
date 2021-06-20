@@ -8,21 +8,23 @@ const ShowDate = () => {
     <div className='container'>
       <div className="date">
         <div className="date__circle">
-          <div className="date__inner">
-            <div className="date__info">
-              <span>{month}</span>
-              <span>{day}</span>
-              <span>ABOUT ME</span>
-            </div>
-          </div>
-          <div className="date__border">
-            <div className="date__border__bar date__left">
-              <div className="date__progress"></div>
-            </div>
-            <div className="date__border__bar date__right">
-              <div className="date__progress"></div>
-            </div>
-          </div>
+        <div className="date__info">
+          <span className='date__info__month'>{month}</span>
+          <span className='date__info__day'>{day}</span>
+          <span className='date__info__about'>ABOUT ME</span>
+        </div>
+          <svg
+            width="120"
+            height="120">
+            <circle
+              class="date__circle__progress"
+              stroke="white"
+              stroke-width="1"
+              fill="transparent"
+              r="53"
+              cx="60"
+              cy="62"/>
+          </svg>
         </div>
       </div>
     </div>
