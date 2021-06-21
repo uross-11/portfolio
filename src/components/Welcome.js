@@ -1,6 +1,6 @@
 import React from 'react';
 import ShowDate from './ShowDate';
-import { VscChevronDown } from 'react-icons/vsc';
+import { VscChevronDown, VscFoldDown, VscArrowDown } from 'react-icons/vsc';
 
 const Welcome = () => {
   return (
@@ -13,9 +13,10 @@ const Welcome = () => {
         </h3>
       </div>
       <ShowDate />
-      <a className='next' href="#work">
-        <VscChevronDown />
-      </a>
+      <VscFoldDown className='next' onClick={() =>{
+        document.getElementById('work').scrollIntoView();
+      }} />
+
     </div>
   )
 }

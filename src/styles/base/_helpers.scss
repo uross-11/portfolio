@@ -2,3 +2,14 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+modal {
+
+  &--open {
+    overflow-y: hidden;
+  }
+
+  &--closed {
+    overflow-y: scroll;
+  }
+}

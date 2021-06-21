@@ -23,17 +23,9 @@
 }
 
 .next {
-  font-family: serif;
-  background-color: black;
-  transform: scale(2.5);
+  cursor: pointer;
   position: absolute;
   bottom: 50px;
   right: 50px;
-  filter: invert(1);
-  height: 16px;
-  border-radius: 50%;
-
-  svg {
-    margin-bottom: 2px;
-  }
+  transform: scale(1.8);
 }

@@ -14,12 +14,20 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   const {isModalOpen} = useGlobalContext();
 
-  /* useEffect(() => {
-    return
-  }, []) */
+  const body = document.querySelector('body');
+
+  useEffect(() => {
+    if (isModalOpen) {
+      body.style.overflowY = 'hidden'
+    } else {
+      body.style.overflowY = 'scroll'
+    }
+  })
 
   return (
-    <div className={`${darkMode ? 'dark' : 'light'} app`}> 
+    <div
+      className={`${darkMode ? 'dark' : 'light'} app`
+    }> 
       <Navbar />
       {isModalOpen && <ProjectModal />}
       <Welcome />
