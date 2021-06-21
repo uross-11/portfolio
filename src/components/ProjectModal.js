@@ -8,14 +8,21 @@ const ProjectModal = () => {
 
   return (
     <div className='projectmodal'>
-      <h1>{modal.title}</h1>
-      <button onClick={closeModal}>x</button>
-      <p>{modal.longdesc}</p>
-      <div>{modal.techstack}</div>
-      <div>{modal.liveurl}</div>
-      <div>{modal.sourceurl}</div>
-      <div>
-        <img src={modal.img} alt="" />
+      <div className='projectmodal__image'>
+        <button className='projectmodal__exit' onClick={closeModal}>x</button>
+        <img src={modal.img} alt={`${modal.title} image`} />
+      </div>
+      <div className="projectmodal__content container">
+        <h2 className='projectmodal__title'>{modal.title}</h2>
+        <p className='projectmodal__description'>{modal.longdesc}</p>
+        <div className='projectmodal__tech'>
+          {modal.techstack.map(item => {
+            return <span>{item}</span>
+          })}
+        </div>
+        <div className='projectmodal__liveurl'>{modal.liveurl}</div>
+        <div className='projectmodal__sourceurl'>{modal.sourceurl}</div>
+
       </div>
     </div>
   );

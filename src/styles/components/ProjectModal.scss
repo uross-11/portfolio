@@ -1,7 +1,43 @@
 .projectmodal {
+  display: flex;
+  flex-direction: column;
   z-index: 11;
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: hsla(0, 0%, 0%, 0.2);
+  background-color: hsla(0, 0%, 0%, 1);
+
+  &__image {
+    img {
+      max-height: 30vh;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__title {
+
+  }
+
+  &__exit {
+    position: absolute;
+  }
+
+  &__description {
+
+  }
+
+  &__tech {
+
+  }
+
+  &__liveurl {
+
+  }
+
+  &__sourceurl {
+
+  }
 }
