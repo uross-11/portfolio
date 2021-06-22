@@ -4,21 +4,46 @@
 }
 
 .hero {
-  padding-top: 8.125rem;
-  font-size: $hero;
-  font-family: 'Ampersand-light';
+  padding-top: 130px;
+  padding-left: 30px;
+
+  @include breakpoint-up(medium) {
+    padding-left: 65px;
+  }
+
+  @include breakpoint-up(large) {
+    padding-top: 65px;
+  }
+
+  @include breakpoint-up(xlarge) {
+    padding-left: 200px;
+  }
 }
 
 .job {
+
+  @include breakpoint-up(medium) {
+    margin-left: 215px;
+  }
+
+  @include breakpoint-up(large) {
+    margin-left: 300px;
+  }
+
+  @include breakpoint-up(xlarge) {
+    margin-left: 410px;
+  }
+
+
   &__title {
     padding-left: 0.5rem;
   }
 
   &__arrow {
     position: relative;
-    transform: rotate(90deg); 
-    fill: white;
+    fill: hsl(0, 0%, 100%);
     bottom: -3px;
+    transform: scale(1.5) rotate(-45deg);
   }
 }
 
@@ -28,4 +53,22 @@
   bottom: 50px;
   right: 50px;
   transform: scale(1.8);
+
+  @include breakpoint-up(medium) {
+    bottom: 50px;
+    right: 50px;
+    transform: scale(2.5);
+  }
+
+  @include breakpoint-up(large) {
+    bottom: 65px;
+    left: 65px;
+  }
+
+  @include breakpoint-up(xlarge) {
+    bottom: 65px;
+    left: unset;
+    right: 200px;
+  }
+
 }

@@ -4,16 +4,20 @@ import { VscArrowDown } from 'react-icons/vsc';
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <a className='navbar__link' href='#'>
+      <a className='navbar__link resume' href='#'>
         resume
         <VscArrowDown />
       </a>
-      <a className='navbar__link' href='#work'>
+      <span className='navbar__link' onClick={() => {
+        document.getElementById('work').scrollIntoView();
+      }}>
         Work
-      </a>
-      <a className='navbar__link' href='#contact'>
+      </span>
+      <span className='navbar__link' onClick={() => {
+        document.getElementById('contact').scrollIntoView();
+      }}>
         Contact Me
-      </a>
+      </span>
     </nav>
   )
 }

@@ -10,12 +10,30 @@
 .date {
   display: grid;
   place-items: center;
-  margin-top: 125px;
-  margin-right: 75px;
+  margin-top: 150px;
+
+  @include breakpoint-up(medium) {
+    margin-top: 250px;
+    padding: 0 250px 0 0;
+  }
+
+  @include breakpoint-up(large) {
+    margin-top: 0;
+    padding: 0 0 0 600px;
+  }
+
+  @include breakpoint-up(xlarge) {
+    margin-top: 200px;
+    padding: 0 800px 0 0;
+  }
 
   &__circle {
     transform: scale(2.2);
     opacity: 0.3;
+
+    @include breakpoint-up(medium) {
+      transform: scale(3.2);
+    }
 
     &__progress {
       animation: circle 500ms ease-in-out;
@@ -45,7 +63,7 @@
 
     &__day {
       right: 0;
-      top: 0.3rem;
+      top: 0.5rem;
       font-size: 2.5rem;
     }
 

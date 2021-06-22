@@ -4,12 +4,7 @@ import { useGlobalContext } from '../context';
 const ProjectCard = ({ 
   id,
   shortdesc,
-  longdesc,
-  img,
   title,
-  techstack,
-  liveurl,
-  sourceurl
 }) => {
   const { openModal, setProjectId } = useGlobalContext();
 
@@ -22,7 +17,7 @@ const ProjectCard = ({
         <img src='../images/img.png' alt="" />
       </div>
       <div className="projectcard__info">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p className='projectcard__desc'>{shortdesc}</p> 
       </div>
     </div>

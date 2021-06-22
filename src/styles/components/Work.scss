@@ -1,7 +1,15 @@
 .work {
   padding-top: 175px;
 
+  @include breakpoint-up(medium) {
+    padding-top: 300px;
+  }
+
   &__title {
     padding-bottom: 100px;
+
+    @include breakpoint-up(medium) {
+      padding-bottom: 130px;
+    }
   }
 }
