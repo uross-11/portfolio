@@ -3,6 +3,9 @@ import ShowDate from './ShowDate';
 import { VscArrowDown } from 'react-icons/vsc';
 
 const Welcome = () => {
+  const arrow = document.getElementById('arrow');
+
+
   return (
     <div className='welcome'>
       <div className="hero">
@@ -13,7 +16,7 @@ const Welcome = () => {
         </h3>
       </div>
       <ShowDate />
-      <VscArrowDown className='next' onClick={() =>{
+      <VscArrowDown id='arrow' className='next' onClick={() =>{
         document.getElementById('work').scrollIntoView();
       }} />
 

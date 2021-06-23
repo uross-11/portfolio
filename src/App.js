@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
+import Loading from './components/Loading';
 
 import './styles/main.scss';
 
@@ -16,6 +17,7 @@ const App = () => {
 
   const body = document.querySelector('body');
 
+  // Prevent scroll when modal opens
   useEffect(() => {
     if (isModalOpen) {
       body.style.overflowY = 'hidden'
@@ -24,10 +26,13 @@ const App = () => {
     }
   })
 
+
+
   return (
     <div
       className={`${darkMode ? 'dark' : 'light'} app`
     }> 
+      <Loading />
       <Navbar />
       {isModalOpen && <ProjectModal />}
       <Welcome />
