@@ -1,6 +1,6 @@
 import React from 'react';
 import ShowDate from './ShowDate';
-import { VscFoldDown, VscArrowDown } from 'react-icons/vsc';
+import { VscArrowDown } from 'react-icons/vsc';
 
 const Welcome = () => {
   return (

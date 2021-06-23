@@ -1,4 +1,5 @@
 import React from 'react';
+import { VscArrowDown } from 'react-icons/vsc';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -8,7 +9,8 @@ const Contact = () => {
   return (
     <div id='contact' className='contact'>
       <h1 className='contact__title'>
-        INTERESTED IN WORKING WITH ME?<br />LET'S TALK.
+        INTERESTED IN WORKING WITH ME?<br />LET'S TALK
+        <VscArrowDown className='contact__title__arrow' />
       </h1>
       <form className='container form' onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>

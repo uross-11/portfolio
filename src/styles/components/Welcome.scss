@@ -1,6 +1,11 @@
 .welcome {
   color: #fff;
   height: 100vh;
+  margin-bottom: 175px;
+
+  @include breakpoint-up(medium) {
+    margin-bottom: 300px;
+  }
 }
 
 .hero {
@@ -42,7 +47,7 @@
   &__arrow {
     position: relative;
     fill: hsl(0, 0%, 100%);
-    bottom: -3px;
+    bottom: -2px;
     transform: scale(1.5) rotate(-45deg);
   }
 }

@@ -1,9 +1,4 @@
 .contact {
-  padding-top: 175px;
-
-  @include breakpoint-up(medium) {
-    padding-top: 265px;
-  }
 
   &__title {
     padding-bottom: 100px;
@@ -24,6 +19,27 @@
       padding-left: 200px;
       padding-right: 200px;
     }
+
+  &__arrow {
+    transform: rotate(45deg) scale(0.6);
+      margin-bottom: -15px;
+      margin-left: -10px;
+
+    @include breakpoint-up(medium) {
+      margin-bottom: -30px;
+      margin-left: -20px;
+    }
+
+    @include breakpoint-up(large) {
+      margin-bottom: -35px;
+      margin-left: -25px;
+    }
+
+    @include breakpoint-up(xlarge) {
+      margin-bottom: -40px;
+      margin-left: -30px;
+    }
+  }
   }
 
   &__button {
@@ -50,7 +66,7 @@
     padding-bottom: 150px;
   }
 
-  @include breakpoint-up(xlarge) {
+  @include breakpoint-up(large) {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -59,7 +75,7 @@
   input {
     width: 100%;
     
-    @include breakpoint-up(xlarge) {
+    @include breakpoint-up(large) {
       max-width: 600px;
     }
   }
@@ -67,7 +83,7 @@
   textarea {
     width: 100%;
     
-    @include breakpoint-up(xlarge) {
+    @include breakpoint-up(large) {
       max-width: 800px;
     }
   }
