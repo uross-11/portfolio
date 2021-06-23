@@ -4,7 +4,7 @@ import Projects from './Projects';
 const Work = () => {
   return (
     <div id='work' className='work'>
-      <h1 className='container work__title'>Work</h1>
+      <h1 className='work__title'>Work</h1>
       <Projects />
     </div>
   )

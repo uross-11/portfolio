@@ -7,6 +7,19 @@
 
   &__title {
     padding-bottom: 100px;
+    padding-left: 30px;
+
+    @include breakpoint-up(medium) {
+      padding-left: 65px;
+    }
+
+    @include breakpoint-up(large) {
+      padding-top: 65px;
+    }
+
+    @include breakpoint-up(xlarge) {
+      padding-left: 200px;
+    }
 
     @include breakpoint-up(medium) {
       padding-bottom: 130px;
