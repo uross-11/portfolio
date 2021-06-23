@@ -8,6 +8,7 @@
   &__title {
     padding-bottom: 100px;
     padding-left: 30px;
+    padding-right: 30px;
 
     @include breakpoint-up(medium) {
       padding-bottom: 130px;
@@ -44,19 +45,32 @@
 
 .form {
   padding-bottom: 100px;
-  max-width: 720px;
 
   @include breakpoint-up(medium) {
     padding-bottom: 150px;
   }
 
-  input {
-    width: 100%;
+  @include breakpoint-up(xlarge) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
-   textarea {
-     border-radius: 0;
-   }
+  input {
+    width: 100%;
+    
+    @include breakpoint-up(xlarge) {
+      max-width: 600px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    
+    @include breakpoint-up(xlarge) {
+      max-width: 800px;
+    }
+  }
 
   input,
   textarea {
@@ -67,7 +81,6 @@
     border-radius: 10px;
     background-color: transparent;
     transition: all 500ms ease-in-out;
-
 
     &:focus {
       box-shadow: 0;

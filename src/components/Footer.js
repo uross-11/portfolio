@@ -12,12 +12,16 @@ const links = [
     text: 'CodePen',
     url: '#',
   },
+  {
+    text: 'Dribbble',
+    url: '#',
+  },
 ];
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className="footer__links">
+      <div className="footer__links container">
         {links.map((item, index) => {
           return <a className='footer__link' key={index} href={item.url}>
             {item.text}

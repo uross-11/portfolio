@@ -31,7 +31,7 @@ const Contact = () => {
           rows={3}
           name='message'
           className='form-control formInput'
-          placeholder="'Damn, that's a really nice portfolio!'"
+          placeholder="Say 'Hi 👋!'"
         />
         <button className='contact__button' type='submit'>Get in touch</button>
       </form>

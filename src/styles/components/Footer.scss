@@ -1,19 +1,28 @@
 .footer {
   margin: 15px;
-  padding: 100px 0;
+  padding: 25px 0;
   background-color: hsla(0, 0%, 100%, 1);
   color: black;
 
   &__links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+
   }
 
   &__link {
     font-weight: 700;
     font-size: 1.2rem;
-    display: block;
+    display: grid;
+    place-items: center;
     font-family: 'Thasadith', sans-serif;
     color: black;
+    width: 50%;
+    padding: 20px;
+
+    @include breakpoint-up(large) {
+      width: unset;
+    }
   }
 }
