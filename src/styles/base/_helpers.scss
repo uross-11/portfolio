@@ -3,6 +3,7 @@
   padding-right: 30px;
 }
 
+// why does this selector work???
 modal {
 
   &--open {
@@ -12,4 +13,14 @@ modal {
   &--closed {
     overflow-y: scroll;
   }
+}
+
+::selection {
+  color: hsl(300, 100%, 25%);
+  background-color: hsl(0, 0%, 10%);
+}
+
+::-moz-selection {
+  color: hsl(300, 100%, 25%);
+  background-color: hsl(0, 0%, 10%);
 }

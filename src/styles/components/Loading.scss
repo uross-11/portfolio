@@ -1,0 +1,39 @@
+@keyframes loading {
+  0% {
+    width: 100%;
+  }
+
+  75% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes loading__inner {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.loading {
+  z-index: 15;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  background: #000;
+  animation: loading 2s ease-in-out;
+
+  &__inner {
+    height: 100%;
+    width: 100%;
+    background: #202020;
+    animation: loading__inner 1500ms ease-in-out;
+  }
+}
