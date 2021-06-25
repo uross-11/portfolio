@@ -49,7 +49,7 @@
     position: absolute;
     z-index: 3;
     font-size: 1rem;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
 
     &__month,
     &__day,
@@ -60,12 +60,15 @@
     &__month {
       z-index: 10;
       right: 2rem;
+      font-family: 'Thasadith', sans-serif;
     }
 
     &__day {
-      right: 0;
-      top: 0.5rem;
+      right: -5px;
+      top: 12px;
       font-size: 2.5rem;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 100;
     }
 
     &__about {

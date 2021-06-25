@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
 import Loading from './components/Loading';
+import ProgressBar from './components/ProgressBar';
 
 import './styles/main.scss';
 
@@ -26,8 +27,6 @@ const App = () => {
     }
   })
 
-
-
   return (
     <div
       className={`${darkMode ? 'dark' : 'light'} app`
@@ -35,6 +34,7 @@ const App = () => {
       <Loading />
       <Navbar />
       {isModalOpen && <ProjectModal />}
+      <ProgressBar />
       <Welcome />
       <Work />
       <Contact />
