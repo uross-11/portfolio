@@ -3,8 +3,6 @@ import ShowDate from './ShowDate';
 import { VscArrowDown } from 'react-icons/vsc';
 
 const Welcome = () => {
-  const arrow = document.getElementById('arrow');
-
 
   return (
     <div className='welcome'>
@@ -16,11 +14,15 @@ const Welcome = () => {
         </h3>
       </div>
       <ShowDate />
-      {/* <img id='arrow' src="https://uploads-ssl.webflow.com/5fa2eabfcd722774771f4fa2/606e304b7cbbedcb1e174f6f_footer%20arrow.svg" alt="" /> */}
-      <VscArrowDown id='arrow' className='next' onClick={() =>{
-        document.getElementById('work').scrollIntoView();
-      }} />
-
+      <img
+        id='arrow'
+        className='next'
+        src="https://uploads-ssl.webflow.com/5fa2eabfcd722774771f4fa2/606e304b7cbbedcb1e174f6f_footer%20arrow.svg"
+        alt="next-arrow"
+        onClick={() =>{
+          document.getElementById('work').scrollIntoView();
+        }}
+      />
     </div>
   )
 }

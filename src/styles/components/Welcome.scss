@@ -55,14 +55,15 @@
 .next {
   cursor: pointer;
   position: absolute;
-  bottom: 50px;
-  right: 50px;
-  transform: scale(1.8);
+  bottom: 35px;
+  right: 35px;
+  transform: rotate(180deg);
+  filter: contrast(0) brightness(3);
 
   @include breakpoint-up(medium) {
     bottom: 50px;
     right: 50px;
-    transform: scale(2.5);
+    transform: rotate(180deg) scale(1.2);
   }
 
   @include breakpoint-up(large) {
