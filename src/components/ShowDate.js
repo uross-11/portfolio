@@ -8,9 +8,15 @@ const ShowDate = () => {
     <div className="date container">
       <div className="date__circle">
       <div className="date__info">
-        <span className='date__info__month'>{month}</span>
-        <span className='date__info__day'>{day}</span>
-        <span className='date__info__about'>ABOUT ME</span>
+        <div className='date__info__month'>
+          <div className='animated'>{month}</div>
+        </div>
+        <div className='date__info__day'>
+          <div className='animated'>{day}</div>
+        </div>
+        <div className='date__info__about'>
+          <div className='animated'>ABOUT ME</div>
+        </div>
       </div>
         <svg
           width="120"

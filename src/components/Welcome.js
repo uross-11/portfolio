@@ -7,7 +7,11 @@ const Welcome = () => {
   return (
     <div className='welcome'>
       <div className="hero">
-        <h1>Hello,<br/>I am Uroš</h1>
+        <h1>
+          <span className='hero__span'>Hello,</span>
+          <br/>
+          <span className='hero__span'>I am Uroš</span>
+        </h1>
         <h3 className='job'>
           <VscArrowDown className='job__arrow' />
           <span className='job__title'>frontend developer</span>

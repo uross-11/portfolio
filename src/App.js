@@ -31,7 +31,7 @@ const App = () => {
     <div
       className={`${darkMode ? 'dark' : 'light'} app`
     }> 
-      <Loading />
+      {/* <Loading /> */}
       <Navbar />
       {isModalOpen && <ProjectModal />}
       <ProgressBar />

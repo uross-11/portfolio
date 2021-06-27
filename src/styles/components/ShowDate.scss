@@ -55,6 +55,7 @@
     &__day,
     &__about {
       position: absolute;
+      overflow: hidden;
     }
 
     &__month {
@@ -72,12 +73,15 @@
     }
 
     &__about {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      top: 43%;
+      left: 30%;
       font-size: 0.6rem;
-      width: 100%;
-      text-align: center;
     }
   }
+
+
+}
+
+.animated {
+  animation: title 1s ease forwards;
 }
