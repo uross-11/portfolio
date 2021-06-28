@@ -9,6 +9,10 @@
     padding-bottom: 100px;
     padding-left: 30px;
 
+    p {
+      transform: translateY(150%);
+    }
+
     @include breakpoint-up(medium) {
       padding-left: 65px;
     }
@@ -27,8 +31,8 @@
 
     &__arrow {
       transform: rotate(45deg) scale(0.6);
-        margin-bottom: -15px;
-        margin-left: -10px;
+      margin-bottom: -15px;
+      margin-left: -10px;
 
       @include breakpoint-up(medium) {
         margin-bottom: -30px;

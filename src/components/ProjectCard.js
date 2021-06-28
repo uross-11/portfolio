@@ -10,15 +10,19 @@ const ProjectCard = ({
 
   return (
     <div className='projectcard'>
-      <div className='img' onClick={() => {
+      <div className='img__container' onClick={() => {
         setProjectId(id);
         openModal();
       }}>
-        <img src='../images/img.png' alt="" />
+        <img className='projectcard__img' src='../images/img.png' alt="" />
       </div>
       <div className="projectcard__info">
-        <h2>{title}</h2>
-        <p className='projectcard__desc'>{shortdesc}</p> 
+        <div className="overflow-h">
+          <h2 className='projectcard__title'>{title}</h2>
+        </div>
+        <div className="overflow-h">
+          <p className='projectcard__desc'>{shortdesc}</p> 
+        </div>
       </div>
     </div>
   )

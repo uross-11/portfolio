@@ -24,3 +24,35 @@ modal {
   color: hsl(300, 100%, 25%);
   background-color: hsl(0, 0%, 10%);
 }
+
+.active {
+  &__arrow {
+    animation: arrow 1s ease forwards;
+  }
+
+  &__text {
+    animation: text 1s ease forwards;
+  }
+
+  &__image {
+    animation: image 1s ease forwards;
+  }
+}
+
+.disabled {
+  &__arrow {
+    animation: arrow 1s ease forwards reverse;
+  }
+
+  &__text {
+    animation: text 1s ease forwards reverse;
+  }
+
+  &__image {
+    animation: image 1s ease forwards reverse;
+  }
+}
+
+.overflow-h {
+  overflow: hidden;
+}

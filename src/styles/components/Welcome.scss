@@ -24,16 +24,9 @@
   @include breakpoint-up(xlarge) {
     padding-left: 200px;
   }
-
-  h1 {
-    animation: title 1500ms ease forwards;
-  }
 }
 
 .job {
-  transform: translateY(150%);
-  animation: title 1s ease forwards;
-  animation-delay: 1100ms;
 
   @include breakpoint-up(medium) {
     margin-left: 215px;
@@ -61,15 +54,14 @@
 }
 
 .next {
-  opacity: 0;
   cursor: pointer;
   position: absolute;
   bottom: 35px;
   right: 35px;
-  transform: rotate(180deg);
   filter: contrast(0) brightness(3);
 
-  animation: next-arrow 2s ease forwards;
+  // Hidden
+  
 
   @include breakpoint-up(medium) {
     bottom: 50px;
@@ -86,27 +78,5 @@
     bottom: 65px;
     left: unset;
     right: 200px;
-  }
-}
-
-@keyframes next-arrow {
-  from {
-    transform: translateX(150%) rotate(180deg); 
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0%) rotate(180deg); 
-    opacity: 1;
-  }
-}
-
-@keyframes title {
-  from {
-    transform: translateY(150%); 
-  }
-
-  to {
-    transform: translateY(0%); 
   }
 }

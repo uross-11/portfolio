@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <div id='contact' className='contact'>
-      <h1 className='contact__title'>
+      <h1 className='contact__title overflow-h'>
         INTERESTED IN WORKING WITH ME?<br />LET'S TALK
         <VscArrowDown className='contact__title__arrow' />
       </h1>
