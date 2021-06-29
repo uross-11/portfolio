@@ -26,6 +26,9 @@ const App = () => {
 
   // Animations
   document.addEventListener('DOMContentLoaded', () => {
+    // Navbar
+    const navbar = document.querySelector('.navbar');
+
     // Welcome
     const arrow = document.querySelector('.next');
     const arrowInner = document.querySelector('.next__inner');
@@ -42,7 +45,10 @@ const App = () => {
     const form = document.querySelectorAll('.hidden__contact__form');
 
     // On page load
+    arrowInner.classList.add('disabled__arrow');
     setTimeout(() => {
+      navbar.classList.add('active__navbar');
+      arrowInner.classList.remove('disabled__arrow');
       arrow.classList.add('active__arrow');
       hiddenWelcomeText.forEach(text => text.classList.add('active__text'));
     }, 2000)

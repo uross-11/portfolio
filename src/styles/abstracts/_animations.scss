@@ -53,3 +53,13 @@
     width: 100%;
   }
 }
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

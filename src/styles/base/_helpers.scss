@@ -41,6 +41,10 @@ modal {
   &__form {
     animation: form 1s ease forwards;
   }
+
+  &__navbar {
+    animation: navbar 1s ease forwards;
+  }
 }
 
 .disabled {
@@ -60,13 +64,18 @@ modal {
 
 .hidden {
 
+  &__navbar {
+    transform: translateY(-150%);
+  }
+
   &__welcome {
     &__text {
       transform: translateY(150%);
     }
 
-    &__circle {
-
+    &__arrow {
+      opacity: 0;
+      transform: translateX(150%) rotate(180deg);
     }
   }
 
@@ -88,9 +97,5 @@ modal {
     &__form {
       width: 0;
     }
-  }
-
-  &__footer {
-
   }
 }

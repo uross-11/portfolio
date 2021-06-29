@@ -3,7 +3,7 @@ import { VscArrowDown } from 'react-icons/vsc';
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
+    <nav className='navbar hidden__navbar'>
       <a className='navbar__link resume' href='#'>
         resume
         <VscArrowDown />
