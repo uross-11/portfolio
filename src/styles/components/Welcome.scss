@@ -11,7 +11,6 @@
 .hero {
   padding-top: 130px;
   padding-left: 30px;
-  overflow: hidden;
 
   @include breakpoint-up(medium) {
     padding-left: 65px;
@@ -40,7 +39,6 @@
     margin-left: 410px;
   }
 
-
   &__title {
     padding-left: 0.5rem;
   }
@@ -59,9 +57,6 @@
   bottom: 35px;
   right: 35px;
   filter: contrast(0) brightness(3);
-
-  // Hidden
-  
 
   @include breakpoint-up(medium) {
     bottom: 50px;

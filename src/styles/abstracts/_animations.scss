@@ -1,15 +1,16 @@
-// Loading only once when page loads 
-
 @keyframes circle {
-  from {
+  0% {
     stroke-dashoffset: 315;
   }
-  to {
-  stroke-dashoffset: 70;  
+
+  75% {
+    stroke-dashoffset: 315;
+  }
+
+  100% {
+    stroke-dashoffset: 70;  
   }
 }
-
-// Loading on scroll
 
 @keyframes arrow {
   from {
@@ -41,5 +42,14 @@
   100% {
     height: 160px;
   }
+}
 
+@keyframes form {
+  0% {
+    width: 0; 
+  } 
+
+  100% {
+    width: 100%;
+  }
 }

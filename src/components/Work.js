@@ -7,7 +7,7 @@ const Work = () => {
     <div id='work' className='work'>
       <h1 className='work__title'>
         <div className='overflow-h'>
-          <p id='work__title'>
+          <p className='hidden__work__text'>
             Work
             <VscArrowDown className='work__title__arrow' />
           </p>

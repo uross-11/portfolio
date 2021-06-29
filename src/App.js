@@ -26,27 +26,38 @@ const App = () => {
 
   // Animations
   document.addEventListener('DOMContentLoaded', () => {
+    // Welcome
     const arrow = document.querySelector('.next');
     const arrowInner = document.querySelector('.next__inner');
-    const workTitle = document.getElementById('work__title');
-    const projectCardTitle = document.querySelectorAll('.projectcard__title');
-    const projectCardDesc = document.querySelectorAll('.projectcard__desc');
+    const hiddenWelcomeText = document.querySelectorAll('.hidden__welcome__text')
+
+    // Work
+    const workTitle = document.querySelector('.work__title')
+    const hiddenWorkText = document.querySelectorAll('.hidden__work__text');
     const projectCardImg = document.querySelectorAll('.projectcard__img');
 
-    arrow.classList.add('active__arrow');
+    // Contact
+    const contact = document.querySelector('.contact__title');
+    const hiddenContactText = document.querySelectorAll('.hidden__contact__text');
+    const form = document.querySelectorAll('.hidden__contact__form');
+
+    // On page load
+    setTimeout(() => {
+      arrow.classList.add('active__arrow');
+      hiddenWelcomeText.forEach(text => text.classList.add('active__text'));
+    }, 2000)
+
+    // On scroll load
     window.addEventListener('scroll', () => {
 
       if (workTitle.getBoundingClientRect().top < 600) {
-        workTitle.classList.add('active__text');
-        projectCardTitle.forEach(title => {
-          title.classList.add('active__text');
-        })
-        projectCardDesc.forEach(description => {
-          description.classList.add('active__text');
-        })
-        projectCardImg.forEach(image => {
-          image.classList.add('active__image');
-        })
+        hiddenWorkText.forEach(text => text.classList.add('active__text'));
+        projectCardImg.forEach(image => image.classList.add('active__image'))
+      }
+
+      if (contact.getBoundingClientRect().top < 600) {
+        hiddenContactText.forEach(text => text.classList.add('active__text'));
+        form.forEach(item => item.classList.add('active__form'));
       }
       
       if (window.scrollY < 100) {

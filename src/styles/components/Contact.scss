@@ -73,7 +73,6 @@
   }
 
   input {
-    width: 100%;
     
     @include breakpoint-up(large) {
       max-width: 600px;
@@ -81,7 +80,6 @@
   }
 
   textarea {
-    width: 100%;
     
     @include breakpoint-up(large) {
       max-width: 800px;

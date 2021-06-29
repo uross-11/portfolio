@@ -9,14 +9,14 @@ const Welcome = () => {
       <div className="hero">
         <h1>
           <div className='overflow-h'>
-            <p className='hero__span'>Hello,</p>
+            <p className='hidden__welcome__text'>Hello,</p>
           </div>
           <div className="overflow-h">
-            <p className='hero__span'>I am Uroš</p>
+            <p className='hidden__welcome__text'>I am Uroš</p>
           </div>
         </h1>
         <h3 className='job overflow-h'>
-          <div>
+          <div className='hidden__welcome__text'>
             <VscArrowDown className='job__arrow' />
             <span className='job__title'>frontend developer</span>
           </div>
