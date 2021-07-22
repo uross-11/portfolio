@@ -29,7 +29,7 @@ const Contact = () => {
           <div className="hidden__contact__text">LET'S&nbsp;</div>
         </div>
         <div className="overflow-h-ib">
-          <div className="hidden__contact__text">TALK <VscArrowDown className='contact__title__arrow' /></div>
+          <div className="hidden__contact__text">TALK<VscArrowDown className='contact__title__arrow' /></div>
         </div>
               </h1>
       <form className='container form' onSubmit={handleSubmit}>

@@ -1,17 +1,15 @@
 .work {
-  margin-bottom: 325px;
+  padding-top: 125px;
+  padding-bottom: 50px;
 
   @include breakpoint-up(medium) {
-    margin-bottom: 415px;
+    padding-top: 200px;
+    padding-bottom: 100px;
   }
 
   &__title {
     padding-bottom: 100px;
     padding-left: 30px;
-
-    p {
-      transform: translateY(150%);
-    }
 
     @include breakpoint-up(medium) {
       padding-left: 65px;
