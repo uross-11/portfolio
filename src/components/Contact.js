@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="hidden__contact__text">WITH&nbsp;</div>
         </div>
         <div className="overflow-h-ib">
-          <div className="hidden__contact__text">ME&nbsp;</div>
+          <div className="hidden__contact__text">ME?&nbsp;</div>
         </div>
         <br />
         <div className="overflow-h-ib">
@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="overflow-h-ib">
           <div className="hidden__contact__text">TALK<VscArrowDown className='contact__title__arrow' /></div>
         </div>
-              </h1>
+      </h1>
       <form className='container form' onSubmit={handleSubmit}>
         <div className="overflow-h">
           <label className='hidden__contact__text' htmlFor="name">Name</label>

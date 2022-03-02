@@ -3,7 +3,6 @@
   padding-right: 30px;
 }
 
-// why does this selector work???
 .modal {
 
   &--open {
@@ -26,8 +25,9 @@
 }
 
 .active {
-  &__arrow {
-    animation: arrow 1s ease forwards;
+  &__next {
+    animation: next 1s ease forwards;
+    animation-delay: 1000ms;
   }
 
   &__text {
@@ -44,12 +44,7 @@
 
   &__navbar {
     animation: navbar 1s ease forwards;
-  }
-}
-
-.disabled {
-  &__arrow {
-    animation: arrow 1s ease forwards reverse;
+    animation-delay: 500ms;
   }
 }
 
@@ -73,9 +68,11 @@
       transform: translateY(150%);
     }
 
-    &__arrow {
-      opacity: 0;
-      transform: translateX(150%) rotate(180deg);
+  }
+
+  &__next {
+    &__button {
+      transform: translateY(150%);
     }
   }
 

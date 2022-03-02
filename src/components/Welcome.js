@@ -23,13 +23,12 @@ const Welcome = () => {
         </h3>
       </div>
       <ShowDate />
-      <div className="next">
-        <img
-          id='arrow'
-          className='next__inner'
-          src="https://uploads-ssl.webflow.com/5fa2eabfcd722774771f4fa2/606e304b7cbbedcb1e174f6f_footer%20arrow.svg"
-          alt="next-arrow"
-          onClick={() =>{
+      <div
+        className="next overflow-h"
+      >
+        <VscArrowDown
+          className='hidden__next__button next__button'
+          onClick={() => {
             document.getElementById('work').scrollIntoView();
           }}
         />

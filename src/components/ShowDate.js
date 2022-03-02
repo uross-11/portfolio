@@ -4,9 +4,17 @@ const ShowDate = () => {
   const date = Date().split(' ');
   const month = date[1].toUpperCase();
   const day = date[2];
+
   return (
     <div className="date container">
-      <div className="date__circle">
+      <div className="date__circle"
+        onMouseEnter={() => {
+          document.getElementById('circle').classList.add('date__circle__progress--on')
+        }}
+        onMouseLeave={() => {
+          document.getElementById('circle').classList.remove('date__circle__progress--on');
+        }}
+      >
       <div className="date__info">
         <div className='date__info__month overflow-h'>
           <div className='hidden__welcome__text'>{month}</div>
@@ -22,6 +30,7 @@ const ShowDate = () => {
           width="120"
           height="120">
           <circle
+            id="circle"
             class="date__circle__progress"
             stroke="white"
             stroke-width="0.2"

@@ -12,15 +12,13 @@
   }
 }
 
-@keyframes arrow {
+@keyframes next {
   from {
-    transform: translateX(150%) rotate(180deg); 
-    opacity: 0;
+    transform: translateY(150%); 
   }
 
   to {
-    transform: translateX(0%) rotate(180deg); 
-    opacity: 1;
+    transform: translateY(0%); 
   }
 }
 

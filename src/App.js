@@ -30,12 +30,11 @@ const App = () => {
     const navbar = document.querySelector('.navbar');
 
     // Welcome
-    const arrow = document.querySelector('.next');
-    const arrowInner = document.querySelector('.next__inner');
-    const hiddenWelcomeText = document.querySelectorAll('.hidden__welcome__text')
+    const arrow = document.querySelector('.hidden__next__button');
+    const hiddenWelcomeText = document.querySelectorAll('.hidden__welcome__text');
 
     // Work
-    const workTitle = document.querySelector('.work__title')
+    const workTitle = document.querySelector('.work__title');
     const hiddenWorkText = document.querySelectorAll('.hidden__work__text');
     const projectCardImg = document.querySelectorAll('.projectcard__img');
 
@@ -45,12 +44,10 @@ const App = () => {
     const form = document.querySelectorAll('.hidden__contact__form');
 
     // On page load
-    arrowInner.classList.add('disabled__arrow');
     setTimeout(() => {
       navbar.classList.add('active__navbar');
-      arrowInner.classList.remove('disabled__arrow');
-      arrow.classList.add('active__arrow');
       hiddenWelcomeText.forEach(text => text.classList.add('active__text'));
+      arrow.classList.add('active__next');
     }, 2000)
 
     // On scroll load
@@ -65,14 +62,7 @@ const App = () => {
         hiddenContactText.forEach(text => text.classList.add('active__text'));
         form.forEach(item => item.classList.add('active__form'));
       }
-      
-      if (window.scrollY < 100) {
-        arrowInner.classList.remove('disabled__arrow');
-        arrow.classList.add('active__arrow');
-      } else {
-        arrow.classList.remove('active__arrow');
-        arrowInner.classList.add('disabled__arrow')
-      }
+
     })
   })
 

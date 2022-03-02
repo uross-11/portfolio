@@ -5,11 +5,11 @@ const links = [
     url: '#',
   },
   {
-    text: 'Twitter',
+    text: 'LinkedIn',
     url: '#',
   },
   {
-    text: 'CodePen',
+    text: 'Twitter',
     url: '#',
   },
   {

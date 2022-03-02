@@ -10,17 +10,16 @@
 
   @include breakpoint-up(large) {
     margin-top: 0;
-    padding: 0 0 0 600px;
+    padding: 0 0 0 575px;
   }
 
   @include breakpoint-up(xlarge) {
-    margin-top: 200px;
-    padding: 0 800px 0 0;
+    margin-top: 100px;
+    padding: 0 0 0 750px;
   }
 
   &__circle {
     transform: scale(2.2);
-    opacity: 0.3;
 
     @include breakpoint-up(medium) {
       transform: scale(3.2);
@@ -31,10 +30,17 @@
       stroke-dasharray: 315;
       stroke-dashoffset: 70;
       transform-origin: 50% 50%;
+      opacity: 0.4;
+
+      transition: opacity 300ms ease-in-out;
+
+      &--on { opacity: 1; }
     }
   }
 
   &__info {
+    border-radius: 50%;
+    cursor: pointer;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -50,7 +56,7 @@
 
     &__month {
       z-index: 10;
-      right: 2rem;
+      right: 1.9rem;
       font-family: 'Thasadith', sans-serif;
     }
 
