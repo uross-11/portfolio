@@ -4,7 +4,7 @@ import { VscArrowDown } from 'react-icons/vsc';
 
 const Work = () => {
   return (
-    <div id='work' className='work'>
+    <div id='work' className='work container__big'>
       <h1 className='work__title'>
         <div className='overflow-h'>
           <p className='hidden__work__text'>

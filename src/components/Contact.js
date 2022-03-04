@@ -7,7 +7,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='contact'>
+    <div id='contact' className='contact container__big'>
       <h1 className='contact__title'>
         <div className="overflow-h-ib">
           <div className="hidden__contact__text">INTERESTED&nbsp;</div>
@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="hidden__contact__text">TALK<VscArrowDown className='contact__title__arrow' /></div>
         </div>
       </h1>
-      <form className='container form' onSubmit={handleSubmit}>
+      {/* <form className='container form' onSubmit={handleSubmit}>
         <div className="overflow-h">
           <label className='hidden__contact__text' htmlFor="name">Name</label>
         </div>
@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="overflow-h">
           <button className='contact__button hidden__contact__text' type='submit'>Get in touch</button>
         </div>
-      </form>
+      </form> */}
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { VscArrowDown } from 'react-icons/vsc';
 const Welcome = () => {
 
   return (
-    <div className='welcome'>
+    <div className='welcome container__big'>
       <div className="hero">
         <h1>
           <div className='overflow-h'>
