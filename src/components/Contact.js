@@ -25,12 +25,14 @@ const Contact = () => {
           <div className="hidden__contact__text">ME?&nbsp;</div>
         </div>
         <br />
-        <div className="overflow-h-ib">
-          <div className="hidden__contact__text">LET'S&nbsp;</div>
-        </div>
-        <div className="overflow-h-ib">
-          <div className="hidden__contact__text">TALK<VscArrowDown className='contact__title__arrow' /></div>
-        </div>
+        <a className="hidden__contact__text contact__mail" href="mailto:u.ignjatovic00@gmail.com">
+          <div className="overflow-h-ib">
+            <div className="hidden__contact__text">LET'S&nbsp;</div>
+          </div>
+          <div className="overflow-h-ib">
+            <div className="hidden__contact__text">TALK<VscArrowDown className='contact__title__arrow' /></div>
+          </div>
+        </a>
       </h1>
       {/* <form className='container form' onSubmit={handleSubmit}>
         <div className="overflow-h">

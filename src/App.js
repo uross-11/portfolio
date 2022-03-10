@@ -26,6 +26,7 @@ const App = () => {
 
   // Animations
   document.addEventListener('DOMContentLoaded', () => {
+
     // Navbar
     const navbar = document.querySelector('.navbar');
 
@@ -67,9 +68,7 @@ const App = () => {
   })
 
   return (
-    <div
-      className={`${darkMode ? 'dark' : 'light'} app`
-    }> 
+    <div className={`${darkMode ? 'dark' : 'light'} app`}> 
       <Loading />
       <Navbar />
       {isModalOpen && <ProjectModal />}

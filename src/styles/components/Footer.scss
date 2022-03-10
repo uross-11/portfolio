@@ -4,6 +4,10 @@
   background-color: hsla(0, 0%, 100%, 1);
   color: black;
 
+  @include breakpoint-up(large) {
+    padding: 45px 0;
+  }
+
   &__links {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +23,17 @@
     color: black;
     width: 50%;
     padding: 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      border-bottom: 2px solid black;
+    }
+
+
+    @include breakpoint-up(large) {
+      padding: 0;
+    }
 
     @include breakpoint-up(large) {
       width: unset;

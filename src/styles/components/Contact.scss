@@ -1,10 +1,11 @@
 .contact {
   padding-top: 125px;
+  padding-bottom: 125px;
 
   @include breakpoint-up(medium) {
     padding-top: 150px;
+    padding-bottom: 250px;
   }
-
 
   &__title {
     padding-bottom: 100px;
@@ -63,8 +64,20 @@
       background-color: white;
     }
   }
+
+  &__mail {
+    line-height: 0.9;
+    white-space: nowrap;
+    border-bottom: 5px solid hsla(255, 255, 255, 0.3);
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      border-bottom: 5px solid white;
+    }
+  }
 }
 
+/* 
 .form {
   padding-bottom: 100px;
 
@@ -111,6 +124,7 @@
     }
   }
 }
+ */
 
 // Override vendors
 .form-control:focus {
