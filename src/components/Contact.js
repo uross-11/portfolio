@@ -2,9 +2,9 @@ import React from 'react';
 import { VscArrowDown } from 'react-icons/vsc';
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  /* const handleSubmit = (e) => {
     e.preventDefault();
-  };
+  }; */
 
   return (
     <div id='contact' className='contact container__big'>

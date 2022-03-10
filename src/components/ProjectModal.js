@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useGlobalContext } from '../context';
 import { data } from '../data';
 
@@ -10,7 +10,7 @@ const ProjectModal = () => {
     <div className='projectmodal'>
       <div className='projectmodal__image'>
         <button className='projectmodal__exit' onClick={closeModal}>close</button>
-        <img src={modal.img} alt={`${modal.title} image`} />
+        <img src={modal.img} alt={`${modal.title} img`} />
       </div>
       <div className="projectmodal__content">
         <h2 className='projectmodal__title'>{modal.title}</h2>

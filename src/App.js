@@ -16,6 +16,10 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   const {isModalOpen} = useGlobalContext();
 
+  useEffect(() => {
+    setDarkMode(true)
+  },[])
+
   // Prevent scroll when modal opens
   const body = document.querySelector('body');
   if (isModalOpen) {
