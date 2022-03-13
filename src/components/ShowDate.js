@@ -44,9 +44,9 @@ const ShowDate = () => {
           height="120">
           <circle
             id="circle"
-            class="date__circle__progress"
+            className="date__circle__progress"
             stroke="white"
-            stroke-width="0.2"
+            strokeWidth="0.2"
             fill="transparent"
             r="53"
             cx="60"

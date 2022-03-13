@@ -1,13 +1,18 @@
 import React from 'react';
 import { useGlobalContext } from '../context';
 import { data } from '../data';
+import { useSpring, animated } from 'react-spring';
 
 const ProjectModal = () => {
   const { projectId, closeModal } = useGlobalContext();
   const modal = data.filter(item => item.id === projectId)[0]
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 }
+  })
 
   return (
-    <div className='projectmodal'>
+    <animated.div style={props} className='projectmodal'>
       <div className='projectmodal__image'>
         <button className='projectmodal__exit' onClick={closeModal}>close</button>
         <img src={modal.img} alt={`${modal.title} img`} />
@@ -25,7 +30,7 @@ const ProjectModal = () => {
           <div className='projectmodal__url__source'>{modal.sourceurl}</div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 }
 
