@@ -1,39 +1,65 @@
 @keyframes loading {
   0% {
-    width: 100%;
+    height: 100%;
   }
 
   75% {
-    width: 100%;
+    height: 100%;
   }
 
   100% {
-    width: 0;
+    height: 0;
   }
 }
 
 @keyframes loading__inner {
   0% {
-    width: 0%;
+    height: 0%;
   }
 
   100% {
-    width: 100%;
+    height: 100%;
   }
 }
 
 .loading {
   z-index: 15;
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 100%;
   position: absolute;
   background: #000;
-  animation: loading 2s ease-in-out;
+  animation: loading 2200ms ease-in-out;
 
-  &__inner {
+  &__inner,
+  &__inner__a,
+  &__inner__a__b {
     height: 100%;
     width: 100%;
-    background: #fff;
-    animation: loading__inner 1500ms ease-in-out;
+  }
+
+  &__inner {
+   
+    background: linear-gradient(
+    hsla(183, 100%, 4%, 0.5) 30%,
+      transparent
+    );
+    animation: loading__inner 1700ms ease-in-out;
+
+    &__a {
+      background: linear-gradient(
+        hsla(283, 60%, 6%, 0.5) 50%,
+        transparent
+      );
+      animation: loading__inner 1700ms ease-out;
+
+      &__b {
+        background: linear-gradient(
+          hsla(0, 0%, 100%, 0.01) 5%,
+          transparent
+        );
+        animation: loading__inner 1700ms ease-in;
+      }
+    }
+
   }
 }
