@@ -48,10 +48,30 @@
     font-size: 1rem;
     font-family: 'Maven Pro', sans-serif;
 
+    &__text {
+      z-index: 2;
+      opacity: 0;
+      width: 69px;
+      position: absolute;
+      text-align: right;
+      font-size: 0.36rem;
+      top: 38px;
+      left: 21px;
+      line-height: 7px;
+      background-color: rgb(0, 0, 0);
+
+      transition: opacity 400ms ease-in-out;
+
+      &--on {
+        opacity: 1;
+      }
+    }
+
     &__month,
     &__day,
     &__about {
       position: absolute;
+      z-index: 3;
     }
 
     &__month {
@@ -71,9 +91,18 @@
     }
 
     &__about {
+      z-index: 1;
+      opacity: 1;
+      position: relative;
       top: 43%;
       left: 30%;
       font-size: 0.6rem;
+
+      transition: opacity 400ms ease-in-out;
+
+      &--off {
+        opacity: 0;
+      }
     }
   }
 }

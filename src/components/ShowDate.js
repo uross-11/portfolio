@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 const ShowDate = () => {
   const date = Date().split(' ');
@@ -14,8 +14,21 @@ const ShowDate = () => {
         onMouseLeave={() => {
           document.getElementById('circle').classList.remove('date__circle__progress--on');
         }}
+        onClick={() => {
+          const dateText = document.getElementById('date-text');
+          const dateAbout = document.getElementById('date-about')
+          if(dateText.classList.contains('date__info__text--on')){
+            dateText.classList.remove('date__info__text--on');
+            dateAbout.classList.remove('date__info__about--off')
+          } else {
+            dateText.classList.add('date__info__text--on');
+            dateAbout.classList.add('date__info__about--off')
+          }
+
+        }}
       >
       <div className="date__info">
+        <div className='date__info__text' id='date-text'>Hi there! My name is Uroš, and I am a web developer. I enjoy creating stuff with code and learning about new things related to programming.</div>
         <div className='date__info__month overflow-h'>
           <div className='hidden__welcome__text'>{month}</div>
         </div>
@@ -23,7 +36,7 @@ const ShowDate = () => {
           <div className='hidden__welcome__text'>{day}</div>
         </div>
         <div className='date__info__about overflow-h'>
-          <div className='hidden__welcome__text'>ABOUT ME</div>
+          <div className='hidden__welcome__text' id='date-about'>ABOUT ME</div>
         </div>
       </div>
         <svg
