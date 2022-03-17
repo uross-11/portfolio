@@ -2,6 +2,8 @@
   z-index: 20;
   position: fixed;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
 
   @include breakpoint-up(medium) {
     font-size: 1.2rem;
@@ -121,13 +123,5 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
-
-    &__live {
-
-    }
-
-    &__source {
-
-    }
   }
 }
