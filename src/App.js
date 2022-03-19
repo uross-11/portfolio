@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useGlobalContext } from './context';
 
 import Welcome from './components/Welcome';
@@ -13,12 +12,7 @@ import ProgressBar from './components/ProgressBar';
 import './styles/main.scss';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(true);
   const {isModalOpen} = useGlobalContext();
-
-  useEffect(() => {
-    setDarkMode(true)
-  },[])
 
   // Prevent scroll when modal opens
   const body = document.querySelector('html');
@@ -72,7 +66,7 @@ const App = () => {
   })
 
   return (
-    <div className={`${darkMode ? 'dark' : 'light'} app`}> 
+    <div className='dark app'> 
       <Loading />
       <Navbar />
       {isModalOpen && <ProjectModal />}
