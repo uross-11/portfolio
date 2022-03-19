@@ -27,8 +27,9 @@
   height: 0;
   width: 100%;
   position: absolute;
-  background: #000;
+  background: black;
   animation: loading 2200ms ease-in-out;
+  transform: rotate(180deg);
 
   &__inner,
   &__inner__a,
@@ -39,6 +40,11 @@
 
   &__inner {
     background: white; 
-    animation: loading__inner 1700ms ease-in-out;
+    animation: loading__inner 1800ms ease-in-out;
+
+    &__a {
+      animation: loading__inner 2200ms ease;
+      background: black;
+    }
   }
 }

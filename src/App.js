@@ -21,7 +21,7 @@ const App = () => {
   },[])
 
   // Prevent scroll when modal opens
-  const body = document.querySelector('body');
+  const body = document.querySelector('html');
   if (isModalOpen) {
     body.style.overflowY = 'hidden'
   } else {
@@ -63,7 +63,7 @@ const App = () => {
         projectCardImg.forEach(image => image.classList.add('active__image'))
       }
 
-      if (contact.getBoundingClientRect().top < 600) {
+      if (contact.getBoundingClientRect().top < 600 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         hiddenContactText.forEach(text => text.classList.add('active__text'));
         form.forEach(item => item.classList.add('active__form'));
       }
