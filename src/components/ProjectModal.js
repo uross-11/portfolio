@@ -26,15 +26,15 @@ const ProjectModal = () => {
       </div>
       <div className="projectmodal__content">
         <h2 className='projectmodal__title'>{modal.title}</h2>
-        <p className='projectmodal__description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure dolorum nobis ut tempora eveniet. Unde, incidunt ratione ad laboriosam amet magnam aspernatur ipsa distinctio exercitationem ut dicta minima at?</p>
+        <p className='projectmodal__description'>{modal.longdesc}</p>
         <div className='projectmodal__tech'>
           {modal.techstack.map((item, index) => {
             return <span key={index}>{item}</span>
           })}
         </div>
         <div className="projectmodal__url">
-          <div className='projectmodal__url__live'>{modal.liveurl}</div>
-          <div className='projectmodal__url__source'>{modal.sourceurl}</div>
+          <a href={modal.liveurl} className='projectmodal__url__live'>live url</a>
+          <a href={modal.sourceurl} className='projectmodal__url__source'>source url</a>
         </div>
       </div>
     </div>
