@@ -33,8 +33,8 @@ const ProjectModal = () => {
           })}
         </div>
         <div className="projectmodal__url">
-          <a href={modal.liveurl} target="_blank" className='projectmodal__url__live'>live URL</a>
-          <a href={modal.sourceurl} target="_blank" className='projectmodal__url__source'>source URL</a>
+          <a href={modal.liveurl} target="_blank" rel="noreferrer" className='projectmodal__url__live'>live URL</a>
+          <a href={modal.sourceurl} target="_blank" rel="noreferrer" className='projectmodal__url__source'>source URL</a>
         </div>
       </div>
     </div>
