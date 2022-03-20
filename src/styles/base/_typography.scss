@@ -53,7 +53,11 @@ h3 {
 .projectmodal__url {
   a {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Maven Pro', sans-serif;
+
+    @include breakpoint-up(large) {
+      font-size: 1.3rem;
+    }
   }
 }

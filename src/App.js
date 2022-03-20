@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useGlobalContext } from './context';
 
 import Welcome from './components/Welcome';
@@ -13,6 +14,10 @@ import './styles/main.scss';
 
 const App = () => {
   const {isModalOpen} = useGlobalContext();
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
   // Prevent scroll when modal opens
   const body = document.querySelector('html');
