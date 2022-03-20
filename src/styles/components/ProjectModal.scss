@@ -26,9 +26,10 @@
     width: 100vw;
 
     img {
-      height: 50%;
+      width: 100%;
 
       @include breakpoint-up(large) {
+        width: unset;
         height: 100%;
         position: absolute;
         right: 0;
