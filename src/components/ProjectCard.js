@@ -5,6 +5,7 @@ const ProjectCard = ({
   id,
   shortdesc,
   title,
+  img
 }) => {
   const { openModal, setProjectId } = useGlobalContext();
 
@@ -14,7 +15,7 @@ const ProjectCard = ({
         setProjectId(id);
         openModal();
       }}>
-        <img className='projectcard__img hidden__work__image' src='../images/img.png' alt="" />
+        <img className='projectcard__img hidden__work__image' src={img} alt="" />
       </div>
       <div className="projectcard__info">
         <div className="overflow-h">

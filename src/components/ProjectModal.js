@@ -33,8 +33,8 @@ const ProjectModal = () => {
           })}
         </div>
         <div className="projectmodal__url">
-          <a href={modal.liveurl} className='projectmodal__url__live'>live url</a>
-          <a href={modal.sourceurl} className='projectmodal__url__source'>source url</a>
+          <a href={modal.liveurl} className='projectmodal__url__live'>live URL</a>
+          <a href={modal.sourceurl} className='projectmodal__url__source'>source URL</a>
         </div>
       </div>
     </div>

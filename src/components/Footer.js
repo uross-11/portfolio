@@ -2,19 +2,19 @@ import React from 'react';
 const links = [
   {
     text: 'GitHub',
-    url: '#',
+    url: 'https://github.com/uross-11',
   },
   {
     text: 'LinkedIn',
-    url: '#',
+    url: 'https://www.linkedin.com/in/uros-ignjatovic/',
   },
   {
     text: 'Twitter',
-    url: '#',
+    url: 'https://twitter.com/uross_11',
   },
   {
     text: 'Dribbble',
-    url: '#',
+    url: 'https://dribbble.com/uross-11',
   },
 ];
 
