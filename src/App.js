@@ -52,7 +52,7 @@ const App = () => {
       navbar.classList.add('active__navbar');
       hiddenWelcomeText.forEach(text => text.classList.add('active__text'));
       arrow.classList.add('active__next');
-    }, 2000)
+    }, 800)
 
     // On scroll load
     window.addEventListener('scroll', () => {
