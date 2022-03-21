@@ -35,12 +35,18 @@ a,
 h3,
 .navbar__link {
   color: white;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-family: 'Ampersand-light';
 
   @include breakpoint-up(medium) {
     font-size: 1.3rem;
   }
+}
+
+h2,
+h3,
+a {
+  letter-spacing: 1px;
 }
 
 h1,
