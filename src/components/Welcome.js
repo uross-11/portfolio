@@ -18,7 +18,7 @@ const Welcome = () => {
         <h3 className='job overflow-h'>
           <div className='hidden__welcome__text'>
             <VscArrowDown className='job__arrow' />
-            <span className='job__title'>frontend developer</span>
+            <span className='job__title'>FRONTEND DEVELOPER</span>
           </div>
         </h3>
       </div>
