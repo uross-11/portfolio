@@ -15,7 +15,7 @@ const ProjectCard = ({
         setProjectId(id);
         openModal();
       }}>
-        <img className='projectcard__img hidden__work__image' src={img} alt="" />
+        <img className='projectcard__img hidden__work__image' src={img} alt="" loading='lazy' />
       </div>
       <div className="projectcard__info">
         <div className="overflow-h">

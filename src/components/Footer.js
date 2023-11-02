@@ -8,14 +8,14 @@ const links = [
     text: 'LinkedIn',
     url: 'https://www.linkedin.com/in/uros-ignjatovic/',
   },
-  {
-    text: 'Twitter',
-    url: 'https://twitter.com/uross_11',
-  },
-  {
-    text: 'Dribbble',
-    url: 'https://dribbble.com/uross-11',
-  },
+  // {
+  //   text: 'Twitter',
+  //   url: 'https://twitter.com/uross_11',
+  // },
+  // {
+  //   text: 'Dribbble',
+  //   url: 'https://dribbble.com/uross-11',
+  // },
 ];
 
 const Footer = () => {

@@ -71,7 +71,7 @@ const App = () => {
   })
 
   return (
-    <div className='dark app'> 
+    <div className='dark app'>
       <Loading />
       <Navbar />
       {isModalOpen && <ProjectModal />}

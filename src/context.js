@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, createContext } from 'react'
 
-const AppContext = React.createContext();
+const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,7 +25,6 @@ const AppProvider = ({ children }) => {
     </AppContext.Provider>
 }
 
-// Custom hook
 export const useGlobalContext = () => {
     return useContext(AppContext);
 }

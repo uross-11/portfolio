@@ -22,7 +22,7 @@ const ProjectModal = () => {
     <div ref={modalRef} className='projectmodal'>
       <div className='projectmodal__image'>
         <button className='projectmodal__exit' onClick={handleExit}>close</button>
-        <img src={modal.img} alt={`${modal.title} img`} />
+        <img src={modal.img} alt={`${modal.title} img`} loading='lazy' />
       </div>
       <div className="projectmodal__content">
         <h2 className='projectmodal__title'>{modal.title}</h2>
