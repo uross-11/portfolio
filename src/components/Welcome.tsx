@@ -34,7 +34,11 @@ export const Welcome = () => {
       </div>
       <ShowDate />
       <div className="next overflow-h">
-        <button onClick={handleClick}>
+        <button
+          title="Go to Work"
+          aria-label="Go to Work"
+          onClick={handleClick}
+        >
           <img
             src="/arrow-down.svg"
             className="hidden__next__button next__button"
