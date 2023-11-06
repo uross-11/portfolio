@@ -28,7 +28,14 @@ export const Contact = () => {
           <div className="overflow-h-ib">
             <div className="hidden__contact__text">
               TALK
-              <img src="/arrow-down.svg" className="contact__title__arrow" alt="" />
+              <img
+                src="/arrow-down.svg"
+                className="contact__title__arrow"
+                alt="Arrow icon"
+                loading="lazy"
+                height="82"
+                width="82"
+              />
             </div>
           </div>
         </a>

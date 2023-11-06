@@ -18,12 +18,19 @@ export const Welcome = () => {
             <p className="hidden__welcome__text">I am Uroš</p>
           </div>
         </h1>
-        <h3 className="job overflow-h">
+        <div className="job overflow-h">
           <div className="hidden__welcome__text">
-            <img src="/arrow-down.svg" className="job__arrow" alt="" />
+            <img
+              src="/arrow-down.svg"
+              className="job__arrow"
+              alt="Arrow icon"
+              loading="lazy"
+              height="34"
+              width="34"
+            />
             <span className="job__title">FRONTEND DEVELOPER</span>
           </div>
-        </h3>
+        </div>
       </div>
       <ShowDate />
       <div className="next overflow-h">
@@ -31,7 +38,9 @@ export const Welcome = () => {
           <img
             src="/arrow-down.svg"
             className="hidden__next__button next__button"
-            alt=""
+            alt="Arrow icon"
+            height="27"
+            width="27"
           />
         </button>
       </div>

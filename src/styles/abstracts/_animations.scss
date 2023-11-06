@@ -1,0 +1,75 @@
+@keyframes circle {
+  0% {
+    stroke-dashoffset: 315;
+  }
+
+  65% {
+    stroke-dashoffset: 315;
+  }
+
+  100% {
+    stroke-dashoffset: 70;  
+  }
+}
+
+@keyframes next {
+  from {
+    transform: translateY(150%); 
+  }
+
+  to {
+    transform: translateY(0%); 
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes image {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 160px;
+  }
+}
+
+@keyframes form {
+  0% {
+    width: 0; 
+  } 
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes gradient {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

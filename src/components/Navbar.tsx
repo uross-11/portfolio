@@ -3,7 +3,7 @@ export const Navbar = () => {
     <nav className="navbar hidden__navbar">
       <a className="navbar__link resume" href="./resume.pdf" download>
         RESUME
-        <img src="/arrow-down.svg" alt="" />
+        <img src="/arrow-down.svg" alt="Arrow icon" height="16" width="16" />
       </a>
       <span
         className="navbar__link"

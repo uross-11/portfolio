@@ -22,7 +22,7 @@ export const ProjectModal = () => {
     modalRef.current.style.opacity = "1";
   }, []);
 
-  if (!projectId) return;
+  if (typeof projectId !== 'number') return;
   const modal = data[projectId];
 
   return (

@@ -7,7 +7,13 @@ export const Work = () => {
         <div className="overflow-h">
           <p className="hidden__work__text">
             Work
-            <img src="/arrow-down.svg" className="work__title__arrow" alt="" />
+            <img
+              src="/arrow-down.svg"
+              className="work__title__arrow"
+              alt="Arrow icon"
+              height="82"
+              width="82"
+            />
           </p>
         </div>
       </h1>

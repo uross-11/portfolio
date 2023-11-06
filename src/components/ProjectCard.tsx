@@ -5,11 +5,13 @@ export const ProjectCard = ({
   shortdesc,
   title,
   img,
+  imgAlt,
 }: {
   id: number;
   shortdesc: string;
   title: string;
   img: string;
+  imgAlt: string;
 }) => {
   const { setIsModalOpen, setProjectId } = useGlobalContext();
 
@@ -25,8 +27,10 @@ export const ProjectCard = ({
         <img
           className="projectcard__img hidden__work__image"
           src={img}
-          alt=""
+          alt={imgAlt}
           loading="lazy"
+          height="160"
+          width="828"
         />
       </div>
       <div className="projectcard__info">
