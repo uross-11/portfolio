@@ -3,8 +3,8 @@ import { useGlobalContext } from "../useGlobalContext.ts";
 import { data } from "../data";
 
 export const ProjectModal = () => {
-  const { projectId, closeModal } = useGlobalContext();
-  const modal = data[projectId];
+  const { projectId, setIsModalOpen } = useGlobalContext();
+
   const modalRef = useRef<HTMLDivElement>(null);
 
   const handleExit = () => {
@@ -12,7 +12,7 @@ export const ProjectModal = () => {
 
     modalRef.current.style.opacity = "0";
     setTimeout(() => {
-      closeModal();
+      setIsModalOpen(false);
     }, 300);
   };
 
@@ -21,6 +21,9 @@ export const ProjectModal = () => {
 
     modalRef.current.style.opacity = "1";
   }, []);
+
+  if (!projectId) return;
+  const modal = data[projectId];
 
   return (
     <div ref={modalRef} className="projectmodal">

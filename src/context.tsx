@@ -1,25 +1,28 @@
 import { useState, createContext, ReactNode } from "react";
 
-const AppContext = createContext({});
+type TAppContext = {
+  isModalOpen: boolean;
+  setIsModalOpen: (arg1: boolean) => void;
+  projectId: number | null;
+  setProjectId: (arg1: number) => void;
+};
+
+const AppContext = createContext<TAppContext>({
+  isModalOpen: false,
+  setIsModalOpen: () => null,
+  projectId: null,
+  setProjectId: () => null,
+});
 
 const AppProvider = ({ children }: { children: ReactNode }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [projectId, setProjectId] = useState(null);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [projectId, setProjectId] = useState<number | null>(null);
 
   return (
     <AppContext.Provider
       value={{
         isModalOpen,
-        openModal,
-        closeModal,
+        setIsModalOpen,
         projectId,
         setProjectId,
       }}

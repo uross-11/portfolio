@@ -57,20 +57,24 @@ const App = () => {
 
     // On page load
     setTimeout(() => {
-      navbar.classList.add("active__navbar");
+      navbar?.classList.add("active__navbar");
       hiddenWelcomeText.forEach((text) => text.classList.add("active__text"));
-      arrow.classList.add("active__next");
+      arrow?.classList.add("active__next");
     }, 800);
 
     // On scroll load
     window.addEventListener("scroll", () => {
-      if (workTitle.getBoundingClientRect().top < 600) {
+      if (
+        workTitle?.getBoundingClientRect() &&
+        workTitle.getBoundingClientRect().top < 600
+      ) {
         hiddenWorkText.forEach((text) => text.classList.add("active__text"));
         projectCardImg.forEach((image) => image.classList.add("active__image"));
       }
 
       if (
-        contact.getBoundingClientRect().top < 600 ||
+        (contact?.getBoundingClientRect() &&
+          contact.getBoundingClientRect().top < 600) ||
         window.innerHeight + window.scrollY >= document.body.offsetHeight
       ) {
         hiddenContactText.forEach((text) => text.classList.add("active__text"));

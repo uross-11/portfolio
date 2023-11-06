@@ -11,7 +11,7 @@ export const ProjectCard = ({
   title: string;
   img: string;
 }) => {
-  const { openModal, setProjectId } = useGlobalContext();
+  const { setIsModalOpen, setProjectId } = useGlobalContext();
 
   return (
     <div className="projectcard">
@@ -19,7 +19,7 @@ export const ProjectCard = ({
         className="projectcard__img__container"
         onClick={() => {
           setProjectId(id);
-          openModal();
+          setIsModalOpen(true);
         }}
       >
         <img
