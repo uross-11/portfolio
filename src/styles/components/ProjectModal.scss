@@ -94,7 +94,6 @@
     &:hover {
       color: black;
       background-color: white;
-
     }
 
     @include breakpoint-up(medium) {
@@ -121,14 +120,14 @@
   &__description,
   &__tech,
   &__url {
-
-    @include breakpoint-up(uhd){
+    @include breakpoint-up(uhd) {
       max-width: 30vw;
       margin: 0 auto;
     }
   }
 
   &__description {
+    white-space: pre-wrap;
     padding-left: 25px;
     padding-right: 25px;
   }

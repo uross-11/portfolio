@@ -17,12 +17,13 @@ export const ProjectModal = () => {
   };
 
   useEffect(() => {
-    if (!modalRef.current) return;
-
-    modalRef.current.style.opacity = "1";
+    setTimeout(() => {
+      if (!modalRef.current) return;
+      modalRef.current.style.opacity = "1";
+    }, 100);
   }, []);
 
-  if (typeof projectId !== 'number') return;
+  if (typeof projectId !== "number") return;
   const modal = data[projectId];
 
   return (
