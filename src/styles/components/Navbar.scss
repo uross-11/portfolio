@@ -1,5 +1,6 @@
 .navbar {
   z-index: 10;
+  display: flex;
   position: fixed;
   padding: 55px 30px 0 30px;
   width: 100%;
@@ -22,12 +23,16 @@
     margin-left: 16px;
 
     &:hover {
-      text-decoration: none;
       color: white;
     }
 
     @include breakpoint-up(medium) {
       margin-left: 30px;
+    }
+
+    img {
+      margin-left: 4px;
+      margin-top: 1px;
     }
   }
 }

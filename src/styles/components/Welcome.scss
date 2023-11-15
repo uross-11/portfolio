@@ -9,8 +9,13 @@
 }
 
 .hero {
+  line-height: 1;
   padding-top: 130px;
   padding-left: 30px;
+
+  h1 .overflow-h:last-child {
+    padding-top: 18px;
+  }
 
   @include breakpoint-up(medium) {
     padding-left: 65px;
@@ -26,13 +31,12 @@
 }
 
 .job {
-
   @include breakpoint-up(medium) {
     margin-left: 215px;
   }
 
   @include breakpoint-up(large) {
-    margin-left: 300px;
+    margin-left: 270px;
   }
 
   @include breakpoint-up(xlarge) {
@@ -40,14 +44,17 @@
   }
 
   &__title {
+    letter-spacing: 1px;
+    font-size: 1.4rem;
     padding-left: 0.5rem;
   }
 
   &__arrow {
     position: relative;
     fill: hsl(0, 0%, 100%);
-    bottom: -2px;
-    transform: scale(1.5) rotate(-45deg);
+    bottom: -8px;
+    right: -8px;
+    transform: rotate(-45deg);
   }
 }
 
@@ -75,7 +82,11 @@
     bottom: 65px;
   }
 
-    &__button {
-      cursor: pointer;
-    }
+  button {
+    all: unset;
+  }
+
+  &__button {
+    cursor: pointer;
+  }
 }

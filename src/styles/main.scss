@@ -3,21 +3,11 @@
 @import 'abstracts/mixins';
 @import 'abstracts/animations';
 
-/* Vendors */
-@import 'vendors/bootstrap';
-
 /* Base */
 @import 'base/base';
 @import 'base/helpers';
 @import 'base/typography';
 @import 'base/fonts';
-
-/* Layout */
-@import 'layout/main';
-
-/* Themes */
-@import 'themes/dark';
-@import 'themes/light';
 
 /* Components */
 @import 'components/Contact';

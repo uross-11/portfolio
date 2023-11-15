@@ -28,9 +28,11 @@
     }
 
   &__arrow {
+    height: 1em;
+    width: 1em;
     transform: rotate(45deg) scale(0.6);
-      margin-bottom: -15px;
-      margin-left: -10px;
+    margin-bottom: -15px;
+    margin-left: -10px;
 
     @include breakpoint-up(medium) {
       margin-bottom: -30px;
@@ -77,7 +79,7 @@
   }
 }
 
-/* 
+/*
 .form {
   padding-bottom: 100px;
 
@@ -92,14 +94,14 @@
   }
 
   input {
-    
+
     @include breakpoint-up(large) {
       max-width: 600px;
     }
   }
 
   textarea {
-    
+
     @include breakpoint-up(large) {
       max-width: 800px;
     }
@@ -117,7 +119,7 @@
 
     &:focus {
       box-shadow: 0;
-      color: white; 
+      color: white;
       border: 1px solid hsla(0, 0%, 100%, 1);
       outline: none;
       background-color: transparent;
