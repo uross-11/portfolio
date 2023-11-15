@@ -31,13 +31,12 @@
 }
 
 .job {
-
   @include breakpoint-up(medium) {
     margin-left: 215px;
   }
 
   @include breakpoint-up(large) {
-    margin-left: 300px;
+    margin-left: 270px;
   }
 
   @include breakpoint-up(xlarge) {
@@ -45,9 +44,8 @@
   }
 
   &__title {
-    font-family: 'Ampersand-light';
     letter-spacing: 1px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding-left: 0.5rem;
   }
 
@@ -56,7 +54,7 @@
     fill: hsl(0, 0%, 100%);
     bottom: -8px;
     right: -8px;
-    transform:rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 

@@ -11,10 +11,6 @@ body {
   @include breakpoint-up(medium) {
     font-size: 1.3rem;
   }
-
-  @include breakpoint-up(large) {
-    font-family: "Ampersand-light";
-  }
 }
 
 h1,
@@ -46,17 +42,12 @@ h2 {
   @include breakpoint-up(medium) {
     font-size: 1.5rem;
   }
-
-  @include breakpoint-up(large) {
-    font-family: "Ampersand-light";
-  }
 }
 
 a,
 h3 {
   color: white;
   font-size: 0.9rem;
-  font-family: "Ampersand-light";
   font-weight: 300;
 
   @include breakpoint-up(medium) {

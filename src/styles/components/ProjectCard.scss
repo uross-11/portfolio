@@ -18,8 +18,7 @@
   &__img__container {
     min-width: 60%;
     cursor: pointer;
-    overflow-x: clip;
-    overflow-y: visible;
+    overflow: clip;
   }
 
   img {
