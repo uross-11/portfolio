@@ -7,6 +7,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://urosi.dev"),
   title: "Uroš Ignjatović",
   description:
     "Developer who enjoys building web experiences that are fast, simple, and pretty.",
@@ -16,20 +17,13 @@ export const metadata: Metadata = {
       "Developer who enjoys building web experiences that are fast, simple, and pretty.",
     url: "https://urosi.dev",
     siteName: "Uroš Ignjatović",
-    images: [
-      {
-        url: "https://myblog.com/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#191724",
+  themeColor: "#1a1825",
   width: "device-width",
   initialScale: 1,
 };
