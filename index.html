@@ -1,8 +1,5 @@
 <!doctype html>
-<html
-  lang="en"
-  class="bg-background text-foreground thin-scrollbar selection:bg-highlight-med"
->
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -10,170 +7,15 @@
       content="z2GjwO42FJCN4ipFCgwGlthVCAEKEkn9CqE4aK5ujU4"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      :root {
-        --color-background: #1a1825;
-        --color-foreground: #deddf4;
-        --color-muted: #918daa;
-        --color-highlight-low: #201f2d;
-        --color-highlight-med: #403d52;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        -webkit-text-size-adjust: 100%;
-        tab-size: 4;
-        line-height: 1.5;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        -webkit-tap-highlight-color: #fff0;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      h1,
-      h2 {
-        font-size: inherit;
-        font-weight: inherit;
-      }
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-      a:focus-visible {
-        outline: 2px solid var(--color-muted);
-        outline-offset: 2px;
-      }
-      ul {
-        list-style: none;
-      }
-      .bg-background {
-        background-color: var(--color-background);
-      }
-      .text-foreground {
-        color: var(--color-foreground);
-      }
-      .text-muted {
-        color: var(--color-muted);
-      }
-      .thin-scrollbar {
-        scrollbar-width: thin;
-        scrollbar-color: var(--color-highlight-med) #fff0;
-        scrollbar-gutter: stable;
-      }
-      .selection\:bg-highlight-med ::selection,
-      .selection\:bg-highlight-med::selection {
-        background-color: var(--color-highlight-med);
-      }
-      .fixed {
-        position: fixed;
-      }
-      .inset-x-0 {
-        left: 0;
-        right: 0;
-      }
-      .top-0 {
-        top: 0;
-      }
-      .bottom-0 {
-        bottom: 0;
-      }
-      .mx-auto {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .mt-32 {
-        margin-top: 8rem;
-      }
-      .mb-5 {
-        margin-bottom: 1.25rem;
-      }
-      .mb-32 {
-        margin-bottom: 8rem;
-      }
-      .-ml-3 {
-        margin-left: -0.75rem;
-      }
-      .flex {
-        display: flex;
-      }
-      .h-20 {
-        height: 5rem;
-      }
-      .w-full {
-        width: 100%;
-      }
-      .max-w-2xl {
-        max-width: 42rem;
-      }
-      .flex-col {
-        flex-direction: column;
-      }
-      .justify-between {
-        justify-content: space-between;
-      }
-      .gap-2 {
-        gap: 0.5rem;
-      }
-      .rounded-lg {
-        border-radius: 0.5rem;
-      }
-      .p-3 {
-        padding: 0.75rem;
-      }
-      .px-6 {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-      }
-      .py-20 {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-      }
-      .pb-32 {
-        padding-bottom: 8rem;
-      }
-      .italic {
-        font-style: italic;
-      }
-      .not-italic {
-        font-style: normal;
-      }
-      .underline {
-        text-decoration-line: underline;
-      }
-      .decoration-muted {
-        text-decoration-color: var(--color-muted);
-      }
-      @media (hover: hover) {
-        .hover\:bg-highlight-low:hover {
-          background-color: var(--color-highlight-low);
-        }
-        .hover\:decoration-foreground:hover {
-          text-decoration-color: var(--color-foreground);
-        }
-      }
-      .gradient-top {
-        background-image: linear-gradient(
-          to bottom,
-          var(--color-background),
-          transparent
-        );
-      }
-      .gradient-bottom {
-        background-image: linear-gradient(
-          to top,
-          var(--color-background),
-          transparent
-        );
-      }
-    </style>
-    <meta name="theme-color" content="#1a1825" />
+    <meta name="theme-color" content="#000" />
+
     <title>Uroš Ignjatović</title>
     <meta
       name="description"
       content="Developer who enjoys building web experiences that are fast, simple, and pretty."
     />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <meta property="og:title" content="Uroš Ignjatović" />
     <meta
       property="og:description"
@@ -187,6 +29,7 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image" content="https://urosi.dev/opengraph-image.jpg" />
     <meta property="og:type" content="website" />
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Uroš Ignjatović" />
     <meta
@@ -200,139 +43,760 @@
       name="twitter:image"
       content="https://urosi.dev/opengraph-image.jpg"
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <style>
+      h1,
+      h2,
+      h3,
+      p {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "SpaceGrotesk";
+        src: url("./assets/SpaceGrotesk-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+      }
+      :root {
+        --color-background: #000;
+        --color-foreground: #e0def4;
+        --color-muted: #908caa;
+        --color-highlight-low: #201f2d;
+        --color-highlight-med: #403d52;
+        --color-border: #6e6a8633;
+        --spacing-pad: 2rem;
+        --spacing-content-pad: 1rem;
+      }
+      html {
+        font-family: "SpaceGrotesk", Helvetica, Arial, sans-serif;
+        background: var(--color-background);
+        color: var(--color-foreground);
+        scrollbar-width: none;
+      }
+      html::selection {
+        background: var(--color-highlight-med);
+      }
+      html ::selection {
+        background: var(--color-highlight-med);
+      }
+      body {
+        overflow-x: hidden;
+        position: relative;
+        margin: 0;
+      }
+      main {
+        padding: 4rem 0;
+        max-width: 48rem;
+        margin-inline: auto;
+        padding-inline: var(--spacing-content-pad);
+        border-color: var(--color-border);
+      }
+      header {
+        font-size: 2.25rem;
+        position: relative;
+        margin-bottom: -1.5rem;
+        z-index: 10;
+      }
+      a {
+        color: inherit;
+        -webkit-text-decoration: inherit;
+        text-decoration: inherit;
+      }
+      svg {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+        filter: saturate(10%) brightness(80%);
+        transition-duration: 500ms;
+      }
+      h2 {
+        margin-bottom: 5rem;
+        font-size: 2.25rem;
+        line-height: calc(2.5 / 2.25);
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      h3 {
+        z-index: 10;
+        margin-bottom: -0.75rem;
+        font-size: 1.875rem;
+        line-height: calc(2.25 / 1.875);
+      }
+      section {
+        margin-bottom: 12rem;
+      }
+      #background {
+        width: 100%;
+        height: 65lvh;
+        aspect-ratio: 1 / 1;
+        position: relative;
+      }
+      #background p {
+        position: absolute;
+        bottom: 0.75rem;
+        left: 0.75rem;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        margin: 0;
+      }
+      #background div {
+        width: 100%;
+        height: 101%;
+        position: absolute;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 70%,
+          rgba(0, 0, 0, 0.7) 90%
+        );
+      }
+      #contact {
+        margin-bottom: 20rem;
+      }
+      #contact a {
+        text-decoration: underline;
+        text-decoration-color: var(--color-muted);
+      }
+      #contact a:hover {
+        text-decoration-color: var(--color-foreground);
+      }
+      #projects ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      #projects li {
+        transition: opacity;
+      }
+      #projects li:hover {
+        opacity: 0.6;
+      }
+      #projects a {
+        display: flex;
+        flex-direction: column;
+      }
+      #projects h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      #projects p {
+        color: var(--color-muted);
+      }
+      .image-frame {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        position: relative;
+      }
+      .bar {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        background: var(--color-background);
+        z-index: 40;
+        animation: bar 3s ease-in-out forwards;
+      }
+      .bottom-0 {
+        bottom: 0;
+      }
+      .top-0 {
+        top: 0;
+      }
+      .frame {
+        position: fixed;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+      }
+      .frame p {
+        line-height: calc(1.75 / 1.125);
+        font-size: 1.125rem;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        top: calc(50% - var(--spacing-pad) - 0.5rem);
+        animation: intro-text 3s ease-in-out forwards;
+      }
+      .frame div {
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        z-index: 50;
+        animation: enter-mobile 3s ease-in-out forwards;
+      }
+      .work-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+      }
+      .work-list a {
+        display: flex;
+        flex-direction: column;
+      }
+      .work-list p {
+        text-align: right;
+        font-style: italic;
+        color: var(--color-muted);
+        margin-top: 0.15rem;
+      }
+      .separator {
+        width: calc(100% + 2 * var(--spacing-content-pad));
+        height: 1px;
+        background: var(--color-border);
+        margin-left: calc(-1 * var(--spacing-content-pad));
+        margin-top: var(--spacing-content-pad);
+        margin-bottom: 10rem;
+      }
+      .image-overlay {
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0) 40%
+        );
+      }
+      .image-description {
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .intro {
+          animation: prevent-click 3s ease-in-out forwards;
+        }
+        svg:hover,
+        svg:active {
+          filter: saturate(100%) brightness(100%);
+          scale: 102%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .intro {
+          display: none;
+        }
+        svg:hover,
+        svg:active {
+          filter: saturate(100%) brightness(100%);
+        }
+      }
+
+      @media (min-width: 64rem) {
+        main {
+          border-left-style: solid;
+          border-right-style: solid;
+          border-left-width: 1px;
+          border-right-width: 1px;
+        }
+        header {
+          font-size: 3.75rem;
+          line-height: 1;
+        }
+        h2 {
+          font-size: 3rem;
+          line-height: 1;
+        }
+        h3 {
+          font-size: 2.25rem;
+          line-height: calc(2.5 / 2.25);
+        }
+        #background {
+          height: unset;
+        }
+        .frame div {
+          animation: enter-desktop 3s ease-in-out forwards;
+          border-width: 1px;
+          border-style: solid;
+        }
+        .separator {
+          width: calc(100vw - (var(--spacing-pad) * 2) - 1px);
+          margin-left: calc((50vw - 25rem - var(--spacing-content-pad)) * -1);
+        }
+      }
+      .shiny-text {
+        color: var(--color-muted);
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0) 50%,
+          rgba(255, 255, 255, 0.8) 60%,
+          rgba(255, 255, 255, 0) 70%
+        );
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        display: inline-block;
+        animation: shine 2.5s linear infinite;
+      }
+      @keyframes shine {
+        0% {
+          background-position: 100%;
+        }
+        100% {
+          background-position: -100%;
+        }
+      }
+      @keyframes enter-desktop {
+        0% {
+          opacity: 0;
+          width: 10%;
+          height: 0;
+          margin: auto;
+        }
+        30% {
+          border-color: var(--color-muted);
+          opacity: 0.5;
+          width: 10%;
+          height: 0;
+          margin: auto;
+        }
+        80% {
+          width: calc(100% - (var(--spacing-pad) * 2));
+          height: 0;
+          margin: auto;
+        }
+        99% {
+          height: calc(100vh - (var(--spacing-pad) * 2));
+          width: calc(100% - (var(--spacing-pad) * 2));
+          margin: auto;
+        }
+        100% {
+          height: calc(100vh - (var(--spacing-pad) * 2));
+          width: calc(100% - (var(--spacing-pad) * 2));
+          margin: calc(var(--spacing-pad) + 1);
+          border-color: var(--color-muted);
+          opacity: 0.5;
+        }
+      }
+
+      @keyframes enter-mobile {
+        0% {
+          opacity: 0;
+          width: 40%;
+          height: 0;
+          margin: auto;
+        }
+
+        50% {
+          border-color: var(--color-muted);
+          opacity: 0.5;
+          width: 40%;
+          height: 0;
+          margin: auto;
+        }
+
+        80% {
+          width: 100%;
+          height: 0;
+          margin: auto;
+        }
+
+        99% {
+          height: calc(100% - (var(--spacing-pad) * 2));
+          width: 100%;
+          margin: auto;
+        }
+
+        100% {
+          height: calc(100% - (var(--spacing-pad) * 2));
+          margin: var(--spacing-pad) 0;
+          border-color: var(--color-muted);
+          opacity: 0.5;
+          width: 100%;
+        }
+      }
+
+      @keyframes bar {
+        0% {
+          opacity: 1;
+          height: 50vh;
+        }
+
+        79% {
+          opacity: 1;
+          height: 50vh;
+        }
+
+        90% {
+          opacity: 1;
+        }
+
+        100% {
+          height: var(--spacing-pad);
+          opacity: 0.8;
+        }
+      }
+
+      @keyframes intro-text {
+        60% {
+          opacity: 1;
+        }
+
+        70% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes prevent-click {
+        to {
+          pointer-events: none;
+        }
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="./assets/lenis@1.3.16.css"
+      media="screen and (min-width: 1024px)"
+    />
   </head>
-  <body class="max-w-2xl mx-auto py-20 px-6">
+  <body>
+    <div class="intro" aria-hidden="true">
+      <div class="frame">
+        <p>Uroš Ignjatović <span class="shiny-text">Portfolio</span></p>
+        <div></div>
+      </div>
+      <div class="bar top-0"></div>
+      <div class="bar bottom-0"></div>
+    </div>
+
     <main>
-      <header class="mb-32"><h1>Uroš Ignjatović</h1></header>
-      <p>
-        I'm a developer who enjoys building
-        <span class="text-muted">web experiences</span> that are fast, simple,
-        and pretty,<span class="text-muted"> experimenting </span> with the
-        limits of software and seeing how far I can reach.
-      </p>
-      <div class="mt-32">
-        <h2 class="mb-5">Work</h2>
-        <ul class="flex flex-col gap-2">
+      <header>
+        <h1>Uroš Ignjatović</h1>
+      </header>
+
+      <div id="background">
+        <div></div>
+        <p>
+          I'm a developer who enjoys building web experiences that are fast,
+          simple, and pretty, experimenting with the limits of software and
+          seeing how far I can reach.
+        </p>
+      </div>
+
+      <div class="separator"></div>
+
+      <section id="work">
+        <h2>Work</h2>
+        <ul class="work-list">
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              class="flex flex-col hover:bg-highlight-low p-3 rounded-lg -ml-3"
               href="https://gigatron.rs"
-              ><span class="flex w-full justify-between"
-                >Gigatron<span class="not-italic text-muted"
-                  >2022 - Present</span
-                ></span
-              ><span class="text-muted italic">Frontend developer</span
-              ><span class="text-muted"
-                >Optimizing e-commerce shopping experience.</span
-              ></a
             >
+              <h3>Gigatron</h3>
+              <div class="image-frame">
+                <svg id="img1">
+                  <filter id="noise1" class="motion-reduce:hidden">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="1"
+                      numOctaves="1"
+                      seed="0"
+                      result="turbulence"
+                    >
+                      <animate
+                        attributeName="seed"
+                        values="0;300"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img1.mouseenter"
+                      />
+                    </feTurbulence>
+                    <feDisplacementMap
+                      id="displacement"
+                      in2="turbulence"
+                      in="SourceGraphic"
+                      scale="0"
+                    >
+                      <animate
+                        attributeName="scale"
+                        values="0;15;0"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img1.mouseenter"
+                      />
+                    </feDisplacementMap>
+                  </filter>
+                  <image
+                    href="./img/5.webp"
+                    width="100%"
+                    filter="url('#noise1')"
+                    fetchpriority="high"
+                  />
+                </svg>
+                <div class="image-overlay"></div>
+              </div>
+              <p>Frontend developer</p>
+            </a>
           </li>
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              class="flex flex-col hover:bg-highlight-low p-3 rounded-lg -ml-3"
               href="https://scops-loyalty.com"
-              ><span class="flex w-full justify-between"
-                >Scops<span class="not-italic text-muted">2024</span></span
-              ><span class="text-muted italic">Full-stack developer</span
-              ><span class="text-muted"
-                >Creating loyalty systems that drive engagement and retain
-                customers.</span
-              ></a
             >
+              <h3>Scops</h3>
+              <div class="image-frame">
+                <svg id="img2">
+                  <filter id="noise2" class="motion-reduce:hidden">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="1"
+                      numOctaves="10"
+                      result="turbulence"
+                    >
+                      <animate
+                        attributeName="seed"
+                        values="0;300"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img2.mouseenter"
+                      />
+                    </feTurbulence>
+                    <feDisplacementMap
+                      id="displacement"
+                      in2="turbulence"
+                      in="SourceGraphic"
+                      scale="0"
+                      xChannelSelector="B"
+                      yChannelSelector="A"
+                    >
+                      <animate
+                        attributeName="scale"
+                        values="0;15;0"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img2.mouseenter"
+                      />
+                    </feDisplacementMap>
+                  </filter>
+                  <image
+                    href="./img/s1.webp"
+                    width="100%"
+                    filter="url('#noise2')"
+                  />
+                </svg>
+                <div class="image-overlay"></div>
+              </div>
+              <p>Full-stack developer</p>
+            </a>
           </li>
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              class="flex flex-col hover:bg-highlight-low p-3 rounded-lg -ml-3"
               href="https://apps.apple.com/rs/app/divino-ai-spiritual-voice-chat/id6739767146"
-              ><span class="flex w-full justify-between"
-                >Divino<span class="not-italic text-muted">2023</span></span
-              ><span class="text-muted italic">Frontend developer</span
-              ><span class="text-muted"
-                >Spiritual AI voice chat companion.</span
-              ></a
             >
+              <h3>Divino</h3>
+              <div class="image-frame">
+                <svg id="img3">
+                  <filter id="noise3" class="motion-reduce:hidden">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="1"
+                      numOctaves="10"
+                      result="turbulence"
+                    >
+                      <animate
+                        attributeName="seed"
+                        values="0;300"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img3.mouseenter"
+                      />
+                    </feTurbulence>
+                    <feDisplacementMap
+                      id="displacement"
+                      in2="turbulence"
+                      in="SourceGraphic"
+                      scale="0"
+                      xChannelSelector="B"
+                      yChannelSelector="A"
+                    >
+                      <animate
+                        attributeName="scale"
+                        values="0;15;0"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img3.mouseenter"
+                      />
+                    </feDisplacementMap>
+                  </filter>
+                  <image
+                    href="./img/div1.webp"
+                    width="33%"
+                    filter="url('#noise3')"
+                  />
+                  <image
+                    href="./img/div2.webp"
+                    width="33%"
+                    x="33.33%"
+                    filter="url('#noise3')"
+                  />
+                  <image
+                    href="./img/div3.webp"
+                    width="33%"
+                    x="66.66%"
+                    filter="url('#noise3')"
+                  />
+                </svg>
+                <div class="image-overlay"></div>
+              </div>
+              <p>Frontend developer</p>
+            </a>
           </li>
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              class="flex flex-col hover:bg-highlight-low p-3 rounded-lg -ml-3"
               href="https://deverus.com"
-              ><span class="flex w-full justify-between"
-                >Deverus<span class="not-italic text-muted">2023</span></span
-              ><span class="text-muted italic">Frontend developer</span
-              ><span class="text-muted"
-                >Digital credential management and verification.</span
-              ></a
             >
+              <h3>Deverus</h3>
+              <div class="image-frame">
+                <svg id="img4">
+                  <filter id="noise4" class="motion-reduce:hidden">
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="1"
+                      numOctaves="10"
+                      result="turbulence"
+                    >
+                      <animate
+                        attributeName="seed"
+                        values="0;300"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img4.mouseenter"
+                      />
+                    </feTurbulence>
+                    <feDisplacementMap
+                      id="displacement"
+                      in2="turbulence"
+                      in="SourceGraphic"
+                      scale="0"
+                      xChannelSelector="B"
+                      yChannelSelector="A"
+                    >
+                      <animate
+                        attributeName="scale"
+                        values="0;15;0"
+                        dur="500ms"
+                        repeatCount="1"
+                        begin="img4.mouseenter"
+                      />
+                    </feDisplacementMap>
+                  </filter>
+                  <image
+                    href="./img/dev2.webp"
+                    width="100%"
+                    filter="url('#noise4')"
+                  />
+                </svg>
+                <div class="image-overlay"></div>
+              </div>
+              <p>Frontend developer</p>
+            </a>
           </li>
         </ul>
-      </div>
-      <div class="mt-32">
-        <h2 class="mb-5">Projects</h2>
-        <ul class="flex flex-col gap-2">
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              class="flex flex-col hover:bg-highlight-low p-3 rounded-lg -ml-3"
               href="https://github.com/uross-11/raycasting"
-              ><span>Raycasting in JS</span
-              ><span class="text-muted"
-                >Simple raycasting engine built with JS, Canvas and
-                WebSockets.</span
-              ></a
             >
+              <h3>Raycasting</h3>
+              <p>
+                Simple raycasting engine built with JS, Canvas and WebSockets.
+              </p>
+            </a>
           </li>
           <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              class="flex flex-col hover:bg-highlight-low p-3 rounded-lg -ml-3"
               href="https://github.com/uross-11/keyboard"
-              ><span>Razer keyboard app</span
-              ><span class="text-muted"
-                >Web app that communicates with Razer SDK and
-                librazermacos.</span
-              ></a
             >
+              <h3>Razer keyboard app</h3>
+              <p>Web app that communicates with Razer SDK and librazermacos.</p>
+            </a>
           </li>
         </ul>
-      </div>
-      <div class="mt-32 pb-32">
-        <h2 class="mb-5">Contact</h2>
-        <div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
           Reach out to me at
-          <a
-            class="underline decoration-muted hover:decoration-foreground"
-            href="mailto:hi@urosi.dev"
-            >hi@urosi.dev</a
-          >
+          <a href="mailto:hi@urosi.dev">hi@urosi.dev</a>
           or see more of my work on
           <a
             target="_blank"
             rel="noopener noreferrer"
-            class="underline decoration-muted hover:decoration-foreground"
             href="https://github.com/uross-11"
-            >GitHub</a
+          >
+            GitHub</a
           >.
-        </div>
-      </div>
+        </p>
+      </section>
     </main>
-    <div
-      aria-hidden="true"
-      class="fixed inset-x-0 top-0 gradient-top h-20"
-    ></div>
-    <div
-      aria-hidden="true"
-      class="fixed inset-x-0 bottom-0 gradient-bottom h-20"
-    ></div>
+
+    <script src="./assets/three.min.js" async></script>
+
+    <script type="module" defer>
+      import {
+        animate,
+        scroll,
+      } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+
+      const isReduced =
+        window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+        window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+      const isLarge =
+        window.matchMedia(`(min-width: 1024px)`) === true ||
+        window.matchMedia("(min-width: 1024px)").matches === true;
+
+      if (!isReduced) {
+        const header = document.querySelector("h1");
+        const main = document.querySelector("main");
+
+        if (isLarge) {
+          scroll(animate(header, { y: [0, 600] }), {
+            target: main,
+            offset: [0, 0.23],
+          });
+        } else {
+          scroll(animate(header, { y: [0, 400] }), {
+            target: main,
+            offset: [0, 0.23],
+          });
+        }
+      }
+    </script>
+
+    <script src="./assets/lenis@1.3.16.min.js"></script>
+    <script async>
+      const lenis = new Lenis({ autoRaf: true });
+    </script>
   </body>
 </html>
